@@ -39,7 +39,11 @@
                 yonathangoncalves.com
             </div>
             <div id="project_image">
-                <img src="{% static 'assets/images/portfolio.png' %}" alt="">
+                <img class="project_image_change" 
+                src="{% if dark_mode == 'enabled' %}{% static 'assets/images/portfolio_dark.png' %}{% else %}{% static 'assets/images/portfolio.png' %}{% endif %}" 
+                data-light="{% static 'assets/images/portfolio.png' %}" 
+                data-dark="{% static 'assets/images/portfolio_dark.png' %}" 
+                alt="Imagen">            
             </div>
             <div id="project_description">
                 {% blocktrans %}The source of this website.{% endblocktrans %}
@@ -63,7 +67,11 @@
                 yonathangoncalves.com
             </div>
             <div id="project_image">
-                <img src="{% static 'assets/images/portfolio.png' %}" alt="">
+                <img class="project_image_change" 
+                src="{% if dark_mode == 'enabled' %}{% static 'assets/images/portfolio_dark.png' %}{% else %}{% static 'assets/images/portfolio.png' %}{% endif %}" 
+                data-light="{% static 'assets/images/portfolio.png' %}" 
+                data-dark="{% static 'assets/images/portfolio_dark.png' %}" 
+                alt="Imagen">            
             </div>
             <div id="project_description">
                 {% blocktrans %}The source of this website.{% endblocktrans %}
@@ -87,8 +95,19 @@
                 yonathangoncalves.com
             </div>
             <div id="project_image">
-                <img src="{% static 'assets/images/portfolio.png' %}" alt="">
+                <img class="project_image_change" 
+                src="{% if dark_mode == 'enabled' %}{% static 'assets/images/portfolio_dark.png' %}{% else %}{% static 'assets/images/portfolio.png' %}{% endif %}" 
+                data-light="{% static 'assets/images/portfolio.png' %}" 
+                data-dark="{% static 'assets/images/portfolio_dark.png' %}" 
+                alt="Imagen">            
             </div>
+
+                <script>
+                    console.log('dark mode enabled');
+                    console.log({{dark_mode}});
+                </script>
+
+         
             <div id="project_description">
                 {% blocktrans %}The source of this website.{% endblocktrans %}
             </div>
