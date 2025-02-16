@@ -1,0 +1,52 @@
+#container_aboutme a{
+    color: var(--first-color);
+    font-weight: bold;
+}
+#container_aboutme a:hover{
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+}
+
+#container_cv{
+    width: 500px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.cv_link{
+    width: 120px;
+    padding: .5rem 1rem;
+    margin: .2rem .8rem;
+    border: 2px solid var(--text-color);
+    border-radius: 12px;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  
+  .cv_link:hover{
+    border: 2px solid var(--first-color);
+    transition: 0.2s;
+  }
+
+  
+#container_aboutme{
+    margin-top: 130px;
+    margin-bottom: 10px;
+}
+
+#aboutme_header h4{
+    margin-bottom: 20px;
+    font-size: 50px;
+}
+
+#aboutme_text{
+    font-size: 20px;
+}
+
+#aboutme_text p{
+    margin-bottom: 10px;
+}
+
+#container_skills{
+    margin-top: 100px;
+}

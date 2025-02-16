@@ -1,0 +1,145 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load i18n %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'css/aboutme.css' %}">
+{% endblock %}
+
+{% block title %}Yonathan Gonçalves | {% trans "About Me" %}{% endblock %}
+
+{% block content %}
+
+<div class="container" id="container_aboutme">
+    <div id="aboutme_header">
+        <h4>About me</h4>
+    </div>
+    <div id="aboutme_text">
+        {% blocktrans %} {% endblocktrans %}
+        <p>Hello, I’m Yonathan Gonçalves, a backend developer with a passion for programming. Although I initially
+            thought my life's work would be as a physicist, I discovered that my true passion lies in programming and
+            solving problems through code.</p>
+
+        <p>Since then, I have dedicated myself to learning and refining my skills in software development, working on
+            increasingly challenging projects that allow me to expand my knowledge and abilities. I enjoy tackling
+            technical challenges and finding creative solutions.</p>
+
+        <p>My background in physics has provided me with a unique analytical perspective, which helps me approach
+            complex problems and optimize the performance of the systems I work on.</p>
+
+        <p>In my free time, I enjoy watching football, going to the cinema, hiking, and geocaching. I am always looking
+            for new challenges that allow me to grow both personally and professionally.</p>
+
+        <p>This portfolio is a showcase of my work and the skills I have developed throughout my career. Here, you can
+            find <a href="{% url 'projects' %}">projects</a> I have worked on, each reflecting my approach to
+            problem-solving and my passion for software development.</p>
+
+    </div>
+
+
+</div>
+<div class="container" id="container_cv">
+    <a href="{% static 'assets/others/CV-Yonathan-Ferreira.pdf' %}" target="_blank" class="cv_link">CV <i
+            class="ri-file-download-line"></i></a>
+</div>
+<div class="container" id="container_skills">
+    <div id="skills_header">
+        <h4>Skills</h4>
+    </div>
+    <div id="skills_boxes">
+        <div id="box1" class="box">
+            <h5>Proficient</h5>
+            <div class="skills_box_container">
+                <div class="skill">
+                    <img src="{% static 'assets/icons/python.svg' %}" alt="">
+                    <h6>Python</h6>
+                </div>
+                <div class="skill">
+                    <img src="{% static 'assets/icons/postgresql.png' %}" alt="">
+                    <h6>PostgreSQL</h6>
+                </div>
+                <div class="skill">
+                    <img src="{% static 'assets/icons/html.svg' %}" alt="">
+                    <h6>HTML5</h6>
+                </div>
+                <div class="skill">
+                    <img src="{% static 'assets/icons/css3.svg' %}" alt="">
+                    <h6>CSS3</h6>
+                </div>
+                <div class="skill">
+                    <img src="{% static 'assets/icons/javascript.svg' %}" alt="">
+                    <h6>JavaScript</h6>
+                </div>
+
+            </div>
+        </div>
+        <div id="box2" class="box">
+            <h5>Learning</h5>
+            <div class="skills_box_container">
+                <div class="skill">
+                    <img src="{% static 'assets/icons/django.png' %}" alt="">
+                    <h6>django</h6>
+                </div>
+                <div class="skill">
+
+                    <h6></h6>
+                </div>
+                <div class="skill">
+
+                    <h6></h6>
+                </div>
+            </div>
+        </div>
+        <div id="box3" class="box">
+            <h5>Interested</h5>
+            <div class="skills_box_container">
+                <div class="skill">
+                    <img src="{% static 'assets/icons/nosql.png' %}" alt="">
+                    <h6>NoSQL DB</h6>
+                </div>
+                <div class="skill">
+                    <img src="{% static 'assets/icons/security.png' %}" alt="">
+                    <h6>Web Security</h6>
+                </div>
+                <div class="skill">
+                    <img src="{% static 'assets/icons/linux.png' %}" alt="">
+                    <h6>Linux</h6>
+                </div>
+                <div class="skill">
+                    <img src="{% static 'assets/icons/aws.svg' %}" alt="">
+                    <h6>AWS</h6>
+                </div>
+            </div>
+        </div>
+        <div id="box3" class="box">
+            <h5>Tools</h5>
+            <div class="skills_box_container">
+                <div class="skill">
+                    <img src="{% static 'assets/icons/vsc.png' %}" alt="">
+                    <h6>VSCode</h6>
+                </div>
+                <div class="skill">
+                    <img src="{% static 'assets/icons/dbeaver.png' %}" alt="">
+                    <h6>DBeaver</h6>
+                </div>
+                <div class="skill">
+                    <img src="{% static 'assets/icons/git.svg' %}" alt="">
+                    <h6>Git</h6>
+                </div>
+                <div class="skill">
+                    <img src="{% static 'assets/icons/github.png' %}" alt="">
+                    <h6>GitHub</h6>
+                </div>
+                <div class="skill">
+                    <img src="{% static 'assets/icons/latex.png' %}" alt="">
+                    <h6>LATEX</h6>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+{% endblock %}

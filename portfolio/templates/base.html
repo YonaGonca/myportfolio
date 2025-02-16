@@ -1,0 +1,174 @@
+{% load static %}
+{% load i18n %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--ICONS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css">
+
+    <!--CSS-->
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+    {% block extra_css %}link{% endblock %}
+
+    <script>
+        if (!localStorage.getItem('darkMode')) {
+            localStorage.setItem('darkMode', 'disabled');
+        }
+
+        if (localStorage.getItem('darkMode') == 'enabled') {
+            document.documentElement.style.setProperty('--title-color', 'hsl(230, 100%, 98%)')
+            document.documentElement.style.setProperty('--header-color', 'hsla(228, 97%, 12%, 0.651)')
+            document.documentElement.style.setProperty('--text-color', 'hsl(230, 100%, 98%)')
+            document.documentElement.style.setProperty('--body-color', 'hsl(230, 75%, 15%)')
+            document.documentElement.style.setProperty('--animation-color1', 'rgb(0, 0, 24)')
+            document.documentElement.style.setProperty('--animation-color2', 'rgb(5, 1, 43)')
+        }
+
+        window.onload = function() {
+            const languageOptions = document.querySelectorAll('.language-option');
+
+            languageOptions.forEach(option => {
+                option.addEventListener('click', function () {
+                    const langCode = this.getAttribute('data-lang').toLowerCase();
+                    changeLanguage(langCode);
+                });
+            });
+        };
+
+        function changeLanguage(langCode) {
+            window.location.href = `/change-language/${langCode}/`;
+        }
+    </script>
+    <!--Favicon-->
+    <link rel="shortcut icon" href="{% static 'assets/images/atom.png' %}" type="image/x-icon">
+
+    <title>{% block title %}Titulo{% endblock %}</title>
+</head>
+
+<body>
+    <header id="site-header">
+        <nav class="nav container">
+            <a href="{% url 'index' %}" class="nav-logo"><img src="{% static 'assets/images/atom.png' %}"
+                    alt="Logo Yonathan">Yonathan
+                Gonçalves</a>
+
+            <div class="menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="{% url 'projects' %}" class="nav-link">{% trans "Projects" %}</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="{% url 'aboutme' %}" class="nav-link">{% trans "About Me" %}</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#footer_links" class="nav-link">{% trans "Contact Me" %}</a>
+                    </li>
+                </ul>
+
+                <!--Close button-->
+                <i class="nav-close ri-close-line" id="nav-close"></i>
+            </div>
+
+            <div class="nav-actions">
+                <!--Language button-->
+                <div class="nav-language" id="language-btn">{{ LANGUAGE_CODE|upper }}</div>
+                <div class="language-options" id="language-options">
+                    <div class="language-option" data-lang="en">EN</div>
+                    <div class="language-option" data-lang="fr">FR</div>
+                    <div class="language-option" data-lang="pt">PT</div>
+                    <div class="language-option" data-lang="es">ES</div>
+                </div>
+
+
+                <!--Dark Mode button-->
+                <i class="ri-moon-line nav-darkmode" id="darkmode-btn"></i>
+
+                <!-- Toggle button -->
+                <i class="nav-toggle ri-menu-line" id="nav-toggle"></i>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="bg"></div>
+        <div class="bg bg2"></div>
+        <div class="bg bg3"></div>
+        {% block content %}
+
+        {% endblock %}
+        <div class="container" id="container_contactme">
+            <div class="form">
+                <div class="contact_info">
+                    <h3 class="title">Let's get in touch</h3>
+        
+                    <p class="info_text">Thank you for taking the time to review my portfolio. If you are interested in
+                        collaborating or would like more information about my experience and skills, please feel free to
+                        get in touch. I would be delighted to discuss how I can add value to your team or project.</p>
+        
+                    <div class="info_container">
+                        <div class="information_item">
+                            <i class="ri-map-pin-line info_icon"></i>
+                            <p>Lisbon, Portugal</p>
+                        </div>
+                        <div class="information_item">
+                            <i class="ri-mail-line info_icon"></i>
+                            <p id="email">ygoncalves5@gmail.com</p>
+                            <i class="ri-checkbox-multiple-blank-line copy_icon" id="copy_icon" onclick="copyEmail()"></i>
+                        </div>
+                        <div class="information_item">
+                            <i class="ri-phone-line info_icon"></i>
+                            <p>+351 915 791 307</p>
+                        </div>
+                    </div>
+                </div>
+        
+        
+        
+                <div class="contact_form">
+                    <form action="index.html">
+                        <h3 class="contact_title">Contact me</h3>
+                        <div class="container_input">
+                            <input type="text" name="name" class="input" required>
+                            <label for="">Name</label>
+                            <span>Name</span>
+                        </div>
+                        <div class="container_input">
+                            <input type="email" name="email" class="input" required>
+                            <label for="">Email</label>
+                            <span>Email</span>
+                        </div>
+                        <div class="container_input textarea">
+                            <textarea name="message" class="input" required></textarea>
+                            <label for="">Message</label>
+                            <span>Message</span>
+                        </div>
+                        <input type="submit" value="Send" class="btn">
+                    </form>
+                </div>
+            </div>
+        
+        </div>
+    </main>
+    <footer class="container">
+        <a href="#" class="footer-logo"><img src="{% static 'assets/images/atom.png' %}" alt="Logo Yonathan"></a>
+        <div id="footer_links">
+            <ul id="footer_links_list">
+                <li>
+                    <a href="https://github.com/YonaGonca" class="footer_link">GitHub <i class="ri-github-fill"></i> </a>
+                </li>
+                <li>
+                    <a href="#" class="footer_link">LinkedIn <i class="ri-linkedin-fill"></i></i></a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+    <!--JavaScript-->
+    <script src="{% static 'js/main.js' %}"></script>
+</body>
+
+</html>

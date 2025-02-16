@@ -1,0 +1,111 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load i18n %}
+
+{% block extra_css %}
+
+{% endblock %}
+
+{% block title %}Yonathan Gonçalves | {% trans "Home" %}{% endblock %}
+
+{% block content %}
+
+<div class="container" id="container_introduction">
+    <div id="introduction_text">
+        <h3>{% blocktrans %}Hey, I'm Yonathan.{% endblocktrans %}</h3>
+        <p>{% blocktrans %}I'm a backend developer with a deep passion for problem-solving and who finds joy in learning.{% endblocktrans %}</p>
+        <p>{% blocktrans %}On this site you can check out all the {% endblocktrans %}<a class="link_introduction" href="{% url 'projects' %}">{% trans "projects" %}</a> {% blocktrans %}I've worked on, or
+            learn more{% endblocktrans %} <a class="link_introduction" href="{% url 'aboutme' %}">{% trans "about me" %}</a>.</p>
+    </div>
+    <div id="introduction_image">
+        <img src="{% static 'assets/images/atom.png' %}" alt="">
+    </div>
+</div>
+
+<div class="container" id="container_arrow_projects">
+    <p>{% trans "Projects" %}</p>
+    <i class="ri-arrow-down-line"></i>
+</div>
+
+<div class="container" id="container_projects">
+    <div id="projects_header">
+        <h4>{% trans "Projects" %}</h4>
+        <div id="all_projects_link"><a href="{% url 'projects' %}">{% blocktrans %}All projects{% endblocktrans %}</a></div>
+
+    </div>
+    <div id="projects">
+        <div class="project" id="project_1">
+            <div id="project_title">
+                yonathangoncalves.com
+            </div>
+            <div id="project_image">
+                <img src="{% static 'assets/images/portfolio.png' %}" alt="">
+            </div>
+            <div id="project_description">
+                {% blocktrans %}The source of this website.{% endblocktrans %}
+            </div>
+            <div id="project_links">
+                <ul id="project_links_list">
+                    <li>
+                        <a href="#" class="project_link">{% blocktrans %}Article{% endblocktrans %}</a>
+                    </li>
+                    <li>
+                        <a href="#" class="project_link">{% blocktrans %}Source{% endblocktrans %} <i class="ri-external-link-line"></i></a>
+                    </li>
+                    <li>
+                        <a href="#" class="project_link">{% blocktrans %}Demo{% endblocktrans %} <i class="ri-external-link-line"></i> </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="project" id="project_1">
+            <div id="project_title">
+                yonathangoncalves.com
+            </div>
+            <div id="project_image">
+                <img src="{% static 'assets/images/portfolio.png' %}" alt="">
+            </div>
+            <div id="project_description">
+                {% blocktrans %}The source of this website.{% endblocktrans %}
+            </div>
+            <div id="project_links">
+                <ul id="project_links_list">
+                    <li>
+                        <a href="#" class="project_link">{% blocktrans %}Article{% endblocktrans %}</a>
+                    </li>
+                    <li>
+                        <a href="#" class="project_link">{% blocktrans %}Source{% endblocktrans %} <i class="ri-external-link-line"></i></a>
+                    </li>
+                    <li>
+                        <a href="#" class="project_link">{% blocktrans %}Demo{% endblocktrans %} <i class="ri-external-link-line"></i> </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="project" id="project_1">
+            <div id="project_title">
+                yonathangoncalves.com
+            </div>
+            <div id="project_image">
+                <img src="{% static 'assets/images/portfolio.png' %}" alt="">
+            </div>
+            <div id="project_description">
+                {% blocktrans %}The source of this website.{% endblocktrans %}
+            </div>
+            <div id="project_links">
+                <ul id="project_links_list">
+                    <li>
+                        <a href="#" class="project_link">{% blocktrans %}Article{% endblocktrans %}</a>
+                    </li>
+                    <li>
+                        <a href="#" class="project_link">{% blocktrans %}Source{% endblocktrans %} <i class="ri-external-link-line"></i></a>
+                    </li>
+                    <li>
+                        <a href="#" class="project_link">{% blocktrans %}Demo{% endblocktrans %} <i class="ri-external-link-line"></i> </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

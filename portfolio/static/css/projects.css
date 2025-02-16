@@ -1,0 +1,20 @@
+
+#projects_header{
+  display: block;
+  margin-top: -20px;
+}
+
+#projects_header h4{
+  font-size: 50px;
+}
+
+/*BREAKPOINTS*/
+  
+/* For large devices */
+@media screen and (min-width: 1023px) {
+    
+    #projects{
+      grid-template-columns: auto auto;
+    }
+    
+      }

@@ -1,0 +1,9 @@
+#virtual enviroment
+venv/
+.venv/
+
+#txt
+todo.txt
+
+#db
+db.sqlite3
