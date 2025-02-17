@@ -501,14 +501,14 @@ nav {
   align-items: center;
   justify-content: center;
   margin: 0 auto;
-
+  scroll-margin-top: 90px;
 }
 
 .form{
   
   width: 100%;
   max-width: 820px;
-  background-color: #fafafa;
+  background-color: var(--body-color);
   border-radius: 12px;
   overflow: hidden;
   display: grid;
@@ -540,7 +540,7 @@ form{
 }
 
 .contact_title{
-  color: var(--container-color);
+  color: var(--body-color);
   font-weight: 500;
   font-size: 1.5rem;
   line-height: 1;
@@ -556,10 +556,10 @@ form{
 .input{
   width: 100%;
   outline: none;
-  border: 2px solid var(--container-color);
+  border: 2px solid var(--body-color);
   background: none;
   padding: 0.6rem 1.2rem;
-  color: var(--container-color);
+  color: var(--body-color);
   font-weight: 500;
   font-size: 0.95rem;
   letter-spacing: 0.5px;
@@ -587,7 +587,7 @@ textarea.input::-webkit-scrollbar {
   left: 15px;
   transform: translateY(-50%);
   padding: 0 0.4rem;
-  color: var(--container-color);
+  color: var(--body-color);
   font-size: 0.9rem;
   font-weight: 400px;
   pointer-events: none;
@@ -602,8 +602,9 @@ textarea.input::-webkit-scrollbar {
 
 .btn{
   padding: 0.6rem 1.3rem;
-  background-color: var(--container-color);
-  border: 2px solid var(--container-color);
+  color: var(--text-color);
+  background-color: var(--body-color);
+  border: 2px solid var(--body-color);
   line-height: 1;
   border-radius: 25px;
   outline: none;
@@ -614,7 +615,7 @@ textarea.input::-webkit-scrollbar {
 
 .btn:hover{
   background-color: transparent;
-  color: var(--container-color);
+  color: var(--body-color);
 }
 
 .container_input span{

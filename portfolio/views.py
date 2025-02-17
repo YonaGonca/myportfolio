@@ -31,11 +31,13 @@ def projects(request):
 
 def aboutme(request):
     lang_code = request.session.get(translation.LANGUAGE_SESSION_KEY)
+    dark_mode = obtain_dark_mode(request)
+    
     if lang_code:
         translation.activate(lang_code)
     else:
         translation.activate('es') 
-    return render(request, 'aboutme.html')
+    return render(request, 'aboutme.html', {'dark_mode': dark_mode})
 
 def change_language(request, lang_code):
     translation.activate(lang_code)  

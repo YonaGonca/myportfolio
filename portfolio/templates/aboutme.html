@@ -77,7 +77,11 @@
             <h5>Learning</h5>
             <div class="skills_box_container">
                 <div class="skill">
-                    <img src="{% static 'assets/icons/django.png' %}" alt="">
+                    <img class="project_image_change" 
+                    src="{% if dark_mode == 'enabled' %}{% static 'assets/icons/django-darkmode.png' %}{% else %}{% static 'assets/icons/django.png' %}{% endif %}" 
+                    data-light="{% static 'assets/icons/django.png' %}" 
+                    data-dark="{% static 'assets/icons/django-darkmode.png' %}" 
+                    alt="Imagen">   
                     <h6>django</h6>
                 </div>
                 <div class="skill">
@@ -127,11 +131,19 @@
                     <h6>Git</h6>
                 </div>
                 <div class="skill">
-                    <img src="{% static 'assets/icons/github.png' %}" alt="">
+                    <img class="project_image_change" 
+                    src="{% if dark_mode == 'enabled' %}{% static 'assets/icons/github-darkmode.png' %}{% else %}{% static 'assets/icons/github.png' %}{% endif %}" 
+                    data-light="{% static 'assets/icons/github.png' %}" 
+                    data-dark="{% static 'assets/icons/github-darkmode.png' %}" 
+                    alt="Imagen">   
                     <h6>GitHub</h6>
                 </div>
                 <div class="skill">
-                    <img src="{% static 'assets/icons/latex.png' %}" alt="">
+                    <img class="project_image_change" 
+                    src="{% if dark_mode == 'enabled' %}{% static 'assets/icons/latex-darkmode.png' %}{% else %}{% static 'assets/icons/latex.png' %}{% endif %}" 
+                    data-light="{% static 'assets/icons/latex.png' %}" 
+                    data-dark="{% static 'assets/icons/latex-darkmode.png' %}" 
+                    alt="Imagen">   
                     <h6>LATEX</h6>
                 </div>
             </div>
