@@ -495,17 +495,16 @@ nav {
 #container_contactme{
   position: relative;
   width: 100%;
-  padding: 2rem;
+  padding: 7rem;
   overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 0 auto;
-  scroll-margin-top: 90px;
+  scroll-margin-top: 25px;
 }
 
 .form{
-  
   width: 100%;
   max-width: 820px;
   background-color: var(--body-color);

@@ -103,16 +103,16 @@
         <div class="container" id="container_contactme">
             <div class="form">
                 <div class="contact_info">
-                    <h3 class="title">Let's get in touch</h3>
+                    <h3 class="title">{% blocktrans %}Let's get in touch{% endblocktrans %}</h3>
         
-                    <p class="info_text">Thank you for taking the time to review my portfolio. If you are interested in
+                    <p class="info_text">{% blocktrans %}Thank you for taking the time to review my portfolio. If you are interested in
                         collaborating or would like more information about my experience and skills, please feel free to
-                        get in touch. I would be delighted to discuss how I can add value to your team or project.</p>
+                        get in touch. I would be delighted to discuss how I can add value to your team or project.{% endblocktrans %}</p>
         
                     <div class="info_container">
                         <div class="information_item">
                             <i class="ri-map-pin-line info_icon"></i>
-                            <p>Lisbon, Portugal</p>
+                            <p>{% blocktrans %}Lisbon, Portugal{% endblocktrans %}</p>
                         </div>
                         <div class="information_item">
                             <i class="ri-mail-line info_icon"></i>
@@ -129,27 +129,35 @@
         
         
                 <div class="contact_form">
-                    <form action="index.html">
-                        <h3 class="contact_title">Contact me</h3>
+                    <form method="post" action="{% url 'send_email' %}">
+                        <h3 class="contact_title">{% blocktrans %}Contact me{% endblocktrans %}</h3>
+                        {% csrf_token %}
+                
                         <div class="container_input">
                             <input type="text" name="name" class="input" required>
-                            <label for="">Name</label>
-                            <span>Name</span>
+                            <label for="id_name">{% blocktrans %}Name{% endblocktrans %}</label>
+                            <span>{% blocktrans %}Name{% endblocktrans %}</span>
                         </div>
+                
                         <div class="container_input">
                             <input type="email" name="email" class="input" required>
-                            <label for="">Email</label>
-                            <span>Email</span>
+                            <label for="id_email">{% blocktrans %}Email{% endblocktrans %}</label>
+                            <span>{% blocktrans %}Email{% endblocktrans %}</span>
                         </div>
+                
                         <div class="container_input textarea">
                             <textarea name="message" class="input" required></textarea>
-                            <label for="">Message</label>
-                            <span>Message</span>
+                            <label for="id_message">{% blocktrans %}Message{% endblocktrans %}</label>
+                            <span>{% blocktrans %}Message{% endblocktrans %}</span>
                         </div>
-                        <input type="submit" value="Send" class="btn">
+                
+                        <input type="submit" value="{% blocktrans %}Send{% endblocktrans %}" class="btn">
                     </form>
                 </div>
-            </div>
+                
+                
+                  
+                
         
         </div>
     </main>

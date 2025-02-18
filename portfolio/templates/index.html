@@ -14,8 +14,7 @@
     <div id="introduction_text">
         <h3>{% blocktrans %}Hey, I'm Yonathan.{% endblocktrans %}</h3>
         <p>{% blocktrans %}I'm a backend developer with a deep passion for problem-solving and who finds joy in learning.{% endblocktrans %}</p>
-        <p>{% blocktrans %}On this site you can check out all the {% endblocktrans %}<a class="link_introduction" href="{% url 'projects' %}">{% trans "projects" %}</a> {% blocktrans %}I've worked on, or
-            learn more{% endblocktrans %} <a class="link_introduction" href="{% url 'aboutme' %}">{% trans "about me" %}</a>.</p>
+        <p>{% blocktrans %}On this site you can check out all the {% endblocktrans %}<a class="link_introduction" href="{% url 'projects' %}">{% blocktrans %}projects{% endblocktrans %}</a> {% blocktrans %}I've worked on, or learn more{% endblocktrans %} <a class="link_introduction" href="{% url 'aboutme' %}">{% blocktrans %}about me{% endblocktrans %}</a>.</p>
     </div>
     <div id="introduction_image">
         <img src="{% static 'assets/images/atom.png' %}" alt="">
