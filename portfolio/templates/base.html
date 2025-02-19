@@ -16,6 +16,8 @@
     {% block extra_css %}link{% endblock %}
 
     <script>
+
+        //Darkmode
         if (!localStorage.getItem('darkMode')) {
             localStorage.setItem('darkMode', 'disabled');
         }
@@ -29,9 +31,11 @@
             document.documentElement.style.setProperty('--animation-color2', 'rgb(5, 1, 43)')
         }
 
+
+        //Language
+
         window.onload = function() {
             const languageOptions = document.querySelectorAll('.language-option');
-
             languageOptions.forEach(option => {
                 option.addEventListener('click', function () {
                     const langCode = this.getAttribute('data-lang').toLowerCase();
@@ -42,6 +46,7 @@
 
         function changeLanguage(langCode) {
             window.location.href = `/change-language/${langCode}/`;
+            document.cookie = "language="+langCode+"; path=/; max-age=" + 60 * 60 * 24 * 365;
         }
     </script>
     <!--Favicon-->

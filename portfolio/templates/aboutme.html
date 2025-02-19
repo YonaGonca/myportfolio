@@ -40,8 +40,16 @@
 
 </div>
 <div class="container" id="container_cv">
-    <a href="{% static 'assets/others/CV-Yonathan-Ferreira.pdf' %}" target="_blank" class="cv_link">CV <i
-            class="ri-file-download-line"></i></a>
+    {% if language == 'en' %}
+        <a href="{% static 'assets/others/CV-Yonathan-Ferreira_en.pdf' %}" target="_blank" class="cv_link">CV <i class="ri-file-download-line"></i></a>
+    {% elif language == 'pt' %}
+        <a href="{% static 'assets/others/CV-Yonathan-Ferreira_pt.pdf' %}" target="_blank" class="cv_link">CV <i class="ri-file-download-line"></i></a>
+    {% elif language == 'es' %}
+        <a href="{% static 'assets/others/CV-Yonathan-Ferreira_es.pdf' %}" target="_blank" class="cv_link">CV <i class="ri-file-download-line"></i></a>
+    {% elif language == 'fr' %}
+        <a href="{% static 'assets/others/CV-Yonathan-Ferreira_fr.pdf' %}" target="_blank" class="cv_link">CV <i class="ri-file-download-line"></i></a>
+    {% endif %}
+
 </div>
 <div class="container" id="container_skills">
     <div id="skills_header">

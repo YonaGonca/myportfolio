@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-10-21 11:28+0100\n"
+"POT-Creation-Date: 2025-02-19 11:15+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,117 +18,328 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: .\portfolio_app\templates\base.html:48
-msgid "Projects"
-msgstr "Projetos"
-
-#: .\portfolio_app\templates\base.html:51
+#: .\portfolio\templates\aboutme.html:9 .\portfolio\templates\base.html:66
 msgid "About Me"
 msgstr "Sobre mim"
 
-#: .\portfolio_app\templates\base.html:54
+#: .\portfolio\templates\aboutme.html:15
+msgid "About me"
+msgstr "Sobre mim"
+
+#: .\portfolio\templates\aboutme.html:19
+msgid ""
+"Hello, I’m Yonathan Gonçalves, a backend developer with a passion for "
+"programming. Although I initially\n"
+"            thought my life's work would be as a physicist, I discovered "
+"that my true passion lies in programming and\n"
+"            solving problems through code."
+msgstr ""
+"Olá, sou Yonathan Gonçalves, um desenvolvedor backend com paixão por "
+"programação. Embora inicialmente eu\n"
+"            pensasse que meu trabalho de vida seria como físico, descobri "
+"que minha verdadeira paixão está na programação e\n"
+"            na resolução de problemas por meio do código."
+
+#: .\portfolio\templates\aboutme.html:24
+msgid ""
+"Since then, I have dedicated myself to learning and refining my skills in "
+"software development, working on\n"
+"            increasingly challenging projects that allow me to expand my "
+"knowledge and abilities. I enjoy tackling\n"
+"            technical challenges and finding creative solutions."
+msgstr ""
+"Desde então, dediquei-me a aprender e aprimorar minhas habilidades em "
+"desenvolvimento de software, trabalhando em\n"
+"            projetos cada vez mais desafiadores que me permitem expandir meu "
+"conhecimento e minhas habilidades. Gosto de enfrentar\n"
+"            desafios técnicos e encontrar soluções criativas."
+
+#: .\portfolio\templates\aboutme.html:28
+msgid ""
+"My background in physics has provided me with a unique analytical "
+"perspective, which helps me approach\n"
+"            complex problems and optimize the performance of the systems I "
+"work on."
+msgstr ""
+"Minha formação em física me proporcionou uma perspectiva analítica única, "
+"o que me ajuda a abordar\n"
+"            problemas complexos e otimizar o desempenho dos sistemas em que "
+"trabalho."
+
+#: .\portfolio\templates\aboutme.html:31
+msgid ""
+"In my free time, I enjoy watching football, going to the cinema, hiking, and "
+"geocaching. I am always looking\n"
+"            for new challenges that allow me to grow both personally and "
+"professionally."
+msgstr ""
+"Nos meus momentos livres, gosto de assistir futebol, ir ao cinema, fazer trilhas "
+"e geocaching. Estou sempre em busca\n"
+"            de novos desafios que me permitam crescer tanto pessoalmente quanto "
+"profissionalmente."
+
+#: .\portfolio\templates\aboutme.html:34
+msgid ""
+"This portfolio is a showcase of my work and the skills I have developed "
+"throughout my career. Here, you can\n"
+"            find "
+msgstr ""
+"Este portfólio é uma exposição do meu trabalho e das habilidades que desenvolvi "
+"ao longo da minha carreira. Aqui, você pode\n"
+"            encontrar "
+
+#: .\portfolio\templates\aboutme.html:35 .\portfolio\templates\index.html:17
+msgid "projects"
+msgstr "projetos"
+
+#: .\portfolio\templates\aboutme.html:35
+msgid ""
+" I have worked on, each reflecting my approach to\n"
+"            problem-solving and my passion for software development."
+msgstr ""
+" em que trabalhei, cada um refletindo minha abordagem para\n"
+"            resolução de problemas e minha paixão pelo desenvolvimento de software."
+
+#: .\portfolio\templates\aboutme.html:48
+msgid "Skills"
+msgstr "Habilidades"
+
+#: .\portfolio\templates\aboutme.html:52
+msgid "Proficient"
+msgstr "Proficiência"
+
+#: .\portfolio\templates\aboutme.html:86
+msgid "Learning"
+msgstr "Aprendendo"
+
+#: .\portfolio\templates\aboutme.html:107
+msgid "Interested"
+msgstr "Interessado"
+
+#: .\portfolio\templates\aboutme.html:136
+msgid "Tools"
+msgstr "Ferramentas"
+
+#: .\portfolio\templates\base.html:63 .\portfolio\templates\index.html:25
+#: .\portfolio\templates\index.html:31 .\portfolio\templates\projects.html:9
+#: .\portfolio\templates\projects.html:16
+msgid "Projects"
+msgstr "Projetos"
+
+#: .\portfolio\templates\base.html:69
 msgid "Contact Me"
 msgstr "Contato"
 
-#: .\portfolio_env\Lib\site-packages\django\contrib\messages\apps.py:7
+#: .\portfolio\templates\base.html:106
+msgid "Let's get in touch"
+msgstr "Vamos entrar em contato"
+
+#: .\portfolio\templates\base.html:108
+msgid ""
+"Thank you for taking the time to review my portfolio. If you are interested "
+"in\n"
+"                        collaborating or would like more information about "
+"my experience and skills, please feel free to\n"
+"                        get in touch. I would be delighted to discuss how I "
+"can add value to your team or project."
+msgstr ""
+"Obrigado por dedicar seu tempo para revisar meu portfólio. Se você estiver "
+"interessado\n"
+"                        em colaborar ou quiser mais informações sobre "
+"minha experiência e habilidades, fique à vontade para\n"
+"                        entrar em contato. Ficarei feliz em discutir como posso "
+"agregar valor à sua equipa ou projeto."
+
+#: .\portfolio\templates\base.html:115
+msgid "Lisbon, Portugal"
+msgstr "Lisboa, Portugal"
+
+#: .\portfolio\templates\base.html:133
+msgid "Contact me"
+msgstr "Contato"
+
+#: .\portfolio\templates\base.html:138 .\portfolio\templates\base.html:139
+msgid "Name"
+msgstr "Nome"
+
+#: .\portfolio\templates\base.html:144 .\portfolio\templates\base.html:145
+msgid "Email"
+msgstr "Email"
+
+#: .\portfolio\templates\base.html:150 .\portfolio\templates\base.html:151
+msgid "Message"
+msgstr "Mensagem"
+
+#: .\portfolio\templates\base.html:154
+msgid "Send"
+msgstr "Enviar"
+
+#: .\portfolio\templates\index.html:9
+msgid "Home"
+msgstr "Início"
+
+#: .\portfolio\templates\index.html:15
+msgid "Hey, I'm Yonathan."
+msgstr "Olá, sou Yonathan"
+
+#: .\portfolio\templates\index.html:16
+msgid ""
+"I'm a backend developer with a deep passion for problem-solving and who "
+"finds joy in learning."
+msgstr ""
+"Sou um desenvolvedor backend com uma grande paixão por resolver problemas e que "
+"encontra alegria em aprender."
+
+#: .\portfolio\templates\index.html:17
+msgid "On this site you can check out all the "
+msgstr "Neste site, você pode conferir todos os "
+
+#: .\portfolio\templates\index.html:17
+msgid "I've worked on, or learn more"
+msgstr "em que trabalhei, ou saber mais"
+
+#: .\portfolio\templates\index.html:17
+msgid "about me"
+msgstr "sobre mim"
+
+#: .\portfolio\templates\index.html:32
+msgid "All projects"
+msgstr "Todos os projetos"
+
+#: .\portfolio\templates\index.html:48 .\portfolio\templates\index.html:76
+#: .\portfolio\templates\index.html:111 .\portfolio\templates\projects.html:31
+#: .\portfolio\templates\projects.html:58
+#: .\portfolio\templates\projects.html:85
+#: .\portfolio\templates\projects.html:112
+#: .\portfolio\templates\projects.html:139
+#: .\portfolio\templates\projects.html:166
+msgid "The source of this website."
+msgstr "O código-fonte deste site"
+
+#: .\portfolio\templates\index.html:53 .\portfolio\templates\index.html:81
+#: .\portfolio\templates\index.html:116 .\portfolio\templates\projects.html:36
+#: .\portfolio\templates\projects.html:63
+#: .\portfolio\templates\projects.html:90
+#: .\portfolio\templates\projects.html:117
+#: .\portfolio\templates\projects.html:144
+#: .\portfolio\templates\projects.html:171
+msgid "Article"
+msgstr "Artigo"
+
+#: .\portfolio\templates\index.html:56 .\portfolio\templates\index.html:84
+#: .\portfolio\templates\index.html:119 .\portfolio\templates\projects.html:39
+#: .\portfolio\templates\projects.html:66
+#: .\portfolio\templates\projects.html:93
+#: .\portfolio\templates\projects.html:120
+#: .\portfolio\templates\projects.html:147
+#: .\portfolio\templates\projects.html:174
+msgid "Source"
+msgstr "Código"
+
+#: .\portfolio\templates\index.html:59 .\portfolio\templates\index.html:87
+#: .\portfolio\templates\index.html:122
+msgid "Demo"
+msgstr "Demo"
+
+#: .\venv\Lib\site-packages\django\contrib\messages\apps.py:7
 msgid "Messages"
 msgstr ""
 
-#: .\portfolio_env\Lib\site-packages\django\contrib\sitemaps\apps.py:8
+#: .\venv\Lib\site-packages\django\contrib\sitemaps\apps.py:8
 msgid "Site Maps"
 msgstr ""
 
-#: .\portfolio_env\Lib\site-packages\django\contrib\staticfiles\apps.py:9
+#: .\venv\Lib\site-packages\django\contrib\staticfiles\apps.py:9
 msgid "Static Files"
 msgstr ""
 
-#: .\portfolio_env\Lib\site-packages\django\contrib\syndication\apps.py:7
+#: .\venv\Lib\site-packages\django\contrib\syndication\apps.py:7
 msgid "Syndication"
 msgstr ""
 
 #. Translators: String used to replace omitted page numbers in elided page
 #. range generated by paginators, e.g. [1, 2, '…', 5, 6, 7, '…', 9, 10].
-#: .\portfolio_env\Lib\site-packages\django\core\paginator.py:30
+#: .\venv\Lib\site-packages\django\core\paginator.py:30
 msgid "…"
 msgstr ""
 
-#: .\portfolio_env\Lib\site-packages\django\core\paginator.py:51
+#: .\venv\Lib\site-packages\django\core\paginator.py:51
 msgid "That page number is not an integer"
 msgstr ""
 
-#: .\portfolio_env\Lib\site-packages\django\core\paginator.py:53
+#: .\venv\Lib\site-packages\django\core\paginator.py:53
 msgid "That page number is less than 1"
 msgstr ""
 
-#: .\portfolio_env\Lib\site-packages\django\core\paginator.py:58
+#: .\venv\Lib\site-packages\django\core\paginator.py:58
 msgid "That page contains no results"
 msgstr ""
 
-#: .\portfolio_env\Lib\site-packages\django\core\validators.py:22
+#: .\venv\Lib\site-packages\django\core\validators.py:22
 msgid "Enter a valid value."
 msgstr ""
 
-#: .\portfolio_env\Lib\site-packages\django\core\validators.py:93
-#: .\portfolio_env\Lib\site-packages\django\forms\fields.py:678
+#: .\venv\Lib\site-packages\django\core\validators.py:93
+#: .\venv\Lib\site-packages\django\forms\fields.py:678
 msgid "Enter a valid URL."
 msgstr ""
 
-#: .\portfolio_env\Lib\site-packages\django\core\validators.py:151
+#: .\venv\Lib\site-packages\django\core\validators.py:151
 msgid "Enter a valid integer."
 msgstr ""
 
-#: .\portfolio_env\Lib\site-packages\django\core\validators.py:162
+#: .\venv\Lib\site-packages\django\core\validators.py:162
 msgid "Enter a valid email address."
 msgstr ""
 
 #. Translators: "letters" means latin letters: a-z and A-Z.
-#: .\portfolio_env\Lib\site-packages\django\core\validators.py:265
+#: .\venv\Lib\site-packages\django\core\validators.py:265
 msgid ""
 "Enter a valid “slug” consisting of letters, numbers, underscores or hyphens."
 msgstr ""
 
-#: .\portfolio_env\Lib\site-packages\django\core\validators.py:272
+#: .\venv\Lib\site-packages\django\core\validators.py:272
 msgid ""
 "Enter a valid “slug” consisting of Unicode letters, numbers, underscores, or "
 "hyphens."
 msgstr ""
 
-#: .\portfolio_env\Lib\site-packages\django\core\validators.py:281
-#: .\portfolio_env\Lib\site-packages\django\core\validators.py:291
-#: .\portfolio_env\Lib\site-packages\django\core\validators.py:314
+#: .\venv\Lib\site-packages\django\core\validators.py:281
+#: .\venv\Lib\site-packages\django\core\validators.py:291
+#: .\venv\Lib\site-packages\django\core\validators.py:314
 msgid "Enter a valid IPv4 address."
 msgstr ""
 
-#: .\portfolio_env\Lib\site-packages\django\core\validators.py:299
-#: .\portfolio_env\Lib\site-packages\django\core\validators.py:315
+#: .\venv\Lib\site-packages\django\core\validators.py:299
+#: .\venv\Lib\site-packages\django\core\validators.py:315
 msgid "Enter a valid IPv6 address."
 msgstr ""
 
-#: .\portfolio_env\Lib\site-packages\django\core\validators.py:309
-#: .\portfolio_env\Lib\site-packages\django\core\validators.py:313
+#: .\venv\Lib\site-packages\django\core\validators.py:309
+#: .\venv\Lib\site-packages\django\core\validators.py:313
 msgid "Enter a valid IPv4 or IPv6 address."
 msgstr ""
 
-#: .\portfolio_env\Lib\site-packages\django\core\validators.py:343
+#: .\venv\Lib\site-packages\django\core\validators.py:343
 msgid "Enter only digits separated by commas."
 msgstr ""
 
-#: .\portfolio_env\Lib\site-packages\django\core\validators.py:349
+#: .\venv\Lib\site-packages\django\core\validators.py:349
 #, python-format
 msgid "Ensure this value is %(limit_value)s (it is %(show_value)s)."
 msgstr ""
 
-#: .\portfolio_env\Lib\site-packages\django\core\validators.py:382
+#: .\venv\Lib\site-packages\django\core\validators.py:382
 #, python-format
 msgid "Ensure this value is less than or equal to %(limit_value)s."
 msgstr ""
 
-#: .\portfolio_env\Lib\site-packages\django\core\validators.py:391
+#: .\venv\Lib\site-packages\django\core\validators.py:391
 #, python-format
 msgid "Ensure this value is greater than or equal to %(limit_value)s."
 msgstr ""
 
-#: .\portfolio_env\Lib\site-packages\django\core\validators.py:401
+#: .\venv\Lib\site-packages\django\core\validators.py:401
 #, python-format
 msgid ""
 "Ensure this value has at least %(limit_value)d character (it has "
@@ -139,7 +350,7 @@ msgid_plural ""
 msgstr[0] ""
 msgstr[1] ""
 
-#: .\portfolio_env\Lib\site-packages\django\core\validators.py:416
+#: .\venv\Lib\site-packages\django\core\validators.py:416
 #, python-format
 msgid ""
 "Ensure this value has at most %(limit_value)d character (it has "
@@ -150,27 +361,27 @@ msgid_plural ""
 msgstr[0] ""
 msgstr[1] ""
 
-#: .\portfolio_env\Lib\site-packages\django\core\validators.py:435
-#: .\portfolio_env\Lib\site-packages\django\forms\fields.py:292
-#: .\portfolio_env\Lib\site-packages\django\forms\fields.py:327
+#: .\venv\Lib\site-packages\django\core\validators.py:435
+#: .\venv\Lib\site-packages\django\forms\fields.py:292
+#: .\venv\Lib\site-packages\django\forms\fields.py:327
 msgid "Enter a number."
 msgstr ""
 
-#: .\portfolio_env\Lib\site-packages\django\core\validators.py:437
+#: .\venv\Lib\site-packages\django\core\validators.py:437
 #, python-format
 msgid "Ensure that there are no more than %(max)s digit in total."
 msgid_plural "Ensure that there are no more than %(max)s digits in total."
 msgstr[0] ""
 msgstr[1] ""
 
-#: .\portfolio_env\Lib\site-packages\django\core\validators.py:442
+#: .\venv\Lib\site-packages\django\core\validators.py:442
 #, python-format
 msgid "Ensure that there are no more than %(max)s decimal place."
 msgid_plural "Ensure that there are no more than %(max)s decimal places."
 msgstr[0] ""
 msgstr[1] ""
 
-#: .\portfolio_env\Lib\site-packages\django\core\validators.py:447
+#: .\venv\Lib\site-packages\django\core\validators.py:447
 #, python-format
 msgid ""
 "Ensure that there are no more than %(max)s digit before the decimal point."
@@ -179,339 +390,339 @@ msgid_plural ""
 msgstr[0] ""
 msgstr[1] ""
 
-#: .\portfolio_env\Lib\site-packages\django\core\validators.py:509
+#: .\venv\Lib\site-packages\django\core\validators.py:509
 #, python-format
 msgid ""
 "File extension “%(extension)s” is not allowed. Allowed extensions are: "
 "%(allowed_extensions)s."
 msgstr ""
 
-#: .\portfolio_env\Lib\site-packages\django\core\validators.py:562
+#: .\venv\Lib\site-packages\django\core\validators.py:562
 msgid "Null characters are not allowed."
 msgstr ""
 
-#: .\portfolio_env\Lib\site-packages\django\db\models\base.py:1210
-#: .\portfolio_env\Lib\site-packages\django\forms\models.py:768
+#: .\venv\Lib\site-packages\django\db\models\base.py:1210
+#: .\venv\Lib\site-packages\django\forms\models.py:768
 msgid "and"
 msgstr ""
 
-#: .\portfolio_env\Lib\site-packages\django\db\models\base.py:1212
+#: .\venv\Lib\site-packages\django\db\models\base.py:1212
 #, python-format
 msgid "%(model_name)s with this %(field_labels)s already exists."
 msgstr ""
 
-#: .\portfolio_env\Lib\site-packages\django\db\models\fields\__init__.py:100
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:100
 #, python-format
 msgid "Value %(value)r is not a valid choice."
 msgstr ""
 
-#: .\portfolio_env\Lib\site-packages\django\db\models\fields\__init__.py:101
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:101
 msgid "This field cannot be null."
 msgstr ""
 
-#: .\portfolio_env\Lib\site-packages\django\db\models\fields\__init__.py:102
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:102
 msgid "This field cannot be blank."
 msgstr ""
 
-#: .\portfolio_env\Lib\site-packages\django\db\models\fields\__init__.py:103
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:103
 #, python-format
 msgid "%(model_name)s with this %(field_label)s already exists."
 msgstr ""
 
 #. Translators: The 'lookup_type' is one of 'date', 'year' or 'month'.
 #. Eg: "Title must be unique for pub_date year"
-#: .\portfolio_env\Lib\site-packages\django\db\models\fields\__init__.py:107
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:107
 #, python-format
 msgid ""
 "%(field_label)s must be unique for %(date_field_label)s %(lookup_type)s."
 msgstr ""
 
-#: .\portfolio_env\Lib\site-packages\django\db\models\fields\__init__.py:126
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:126
 #, python-format
 msgid "Field of type: %(field_type)s"
 msgstr ""
 
-#: .\portfolio_env\Lib\site-packages\django\db\models\fields\__init__.py:958
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:958
 #, python-format
 msgid "“%(value)s” value must be either True or False."
 msgstr ""
 
-#: .\portfolio_env\Lib\site-packages\django\db\models\fields\__init__.py:959
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:959
 #, python-format
 msgid "“%(value)s” value must be either True, False, or None."
 msgstr ""
 
-#: .\portfolio_env\Lib\site-packages\django\db\models\fields\__init__.py:961
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:961
 msgid "Boolean (Either True or False)"
 msgstr ""
 
-#: .\portfolio_env\Lib\site-packages\django\db\models\fields\__init__.py:1002
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1002
 #, python-format
 msgid "String (up to %(max_length)s)"
 msgstr ""
 
-#: .\portfolio_env\Lib\site-packages\django\db\models\fields\__init__.py:1096
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1096
 msgid "Comma-separated integers"
 msgstr ""
 
-#: .\portfolio_env\Lib\site-packages\django\db\models\fields\__init__.py:1145
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1145
 #, python-format
 msgid ""
 "“%(value)s” value has an invalid date format. It must be in YYYY-MM-DD "
 "format."
 msgstr ""
 
-#: .\portfolio_env\Lib\site-packages\django\db\models\fields\__init__.py:1147
-#: .\portfolio_env\Lib\site-packages\django\db\models\fields\__init__.py:1290
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1147
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1290
 #, python-format
 msgid ""
 "“%(value)s” value has the correct format (YYYY-MM-DD) but it is an invalid "
 "date."
 msgstr ""
 
-#: .\portfolio_env\Lib\site-packages\django\db\models\fields\__init__.py:1150
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1150
 msgid "Date (without time)"
 msgstr ""
 
-#: .\portfolio_env\Lib\site-packages\django\db\models\fields\__init__.py:1288
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1288
 #, python-format
 msgid ""
 "“%(value)s” value has an invalid format. It must be in YYYY-MM-DD HH:MM[:ss[."
 "uuuuuu]][TZ] format."
 msgstr ""
 
-#: .\portfolio_env\Lib\site-packages\django\db\models\fields\__init__.py:1292
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1292
 #, python-format
 msgid ""
 "“%(value)s” value has the correct format (YYYY-MM-DD HH:MM[:ss[.uuuuuu]]"
 "[TZ]) but it is an invalid date/time."
 msgstr ""
 
-#: .\portfolio_env\Lib\site-packages\django\db\models\fields\__init__.py:1296
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1296
 msgid "Date (with time)"
 msgstr ""
 
-#: .\portfolio_env\Lib\site-packages\django\db\models\fields\__init__.py:1444
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1444
 #, python-format
 msgid "“%(value)s” value must be a decimal number."
 msgstr ""
 
-#: .\portfolio_env\Lib\site-packages\django\db\models\fields\__init__.py:1446
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1446
 msgid "Decimal number"
 msgstr ""
 
-#: .\portfolio_env\Lib\site-packages\django\db\models\fields\__init__.py:1585
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1585
 #, python-format
 msgid ""
 "“%(value)s” value has an invalid format. It must be in [DD] [[HH:]MM:]ss[."
 "uuuuuu] format."
 msgstr ""
 
-#: .\portfolio_env\Lib\site-packages\django\db\models\fields\__init__.py:1588
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1588
 msgid "Duration"
 msgstr ""
 
-#: .\portfolio_env\Lib\site-packages\django\db\models\fields\__init__.py:1638
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1638
 msgid "Email address"
 msgstr ""
 
-#: .\portfolio_env\Lib\site-packages\django\db\models\fields\__init__.py:1661
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1661
 msgid "File path"
 msgstr ""
 
-#: .\portfolio_env\Lib\site-packages\django\db\models\fields\__init__.py:1727
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1727
 #, python-format
 msgid "“%(value)s” value must be a float."
 msgstr ""
 
-#: .\portfolio_env\Lib\site-packages\django\db\models\fields\__init__.py:1729
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1729
 msgid "Floating point number"
 msgstr ""
 
-#: .\portfolio_env\Lib\site-packages\django\db\models\fields\__init__.py:1767
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1767
 #, python-format
 msgid "“%(value)s” value must be an integer."
 msgstr ""
 
-#: .\portfolio_env\Lib\site-packages\django\db\models\fields\__init__.py:1769
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1769
 msgid "Integer"
 msgstr ""
 
-#: .\portfolio_env\Lib\site-packages\django\db\models\fields\__init__.py:1852
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1852
 msgid "Big (8 byte) integer"
 msgstr ""
 
-#: .\portfolio_env\Lib\site-packages\django\db\models\fields\__init__.py:1867
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1867
 msgid "Small integer"
 msgstr ""
 
-#: .\portfolio_env\Lib\site-packages\django\db\models\fields\__init__.py:1875
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1875
 msgid "IPv4 address"
 msgstr ""
 
-#: .\portfolio_env\Lib\site-packages\django\db\models\fields\__init__.py:1906
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1906
 msgid "IP address"
 msgstr ""
 
-#: .\portfolio_env\Lib\site-packages\django\db\models\fields\__init__.py:1986
-#: .\portfolio_env\Lib\site-packages\django\db\models\fields\__init__.py:1987
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1986
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1987
 #, python-format
 msgid "“%(value)s” value must be either None, True or False."
 msgstr ""
 
-#: .\portfolio_env\Lib\site-packages\django\db\models\fields\__init__.py:1989
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1989
 msgid "Boolean (Either True, False or None)"
 msgstr ""
 
-#: .\portfolio_env\Lib\site-packages\django\db\models\fields\__init__.py:2043
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2043
 msgid "Positive big integer"
 msgstr ""
 
-#: .\portfolio_env\Lib\site-packages\django\db\models\fields\__init__.py:2056
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2056
 msgid "Positive integer"
 msgstr ""
 
-#: .\portfolio_env\Lib\site-packages\django\db\models\fields\__init__.py:2069
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2069
 msgid "Positive small integer"
 msgstr ""
 
-#: .\portfolio_env\Lib\site-packages\django\db\models\fields\__init__.py:2083
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2083
 #, python-format
 msgid "Slug (up to %(max_length)s)"
 msgstr ""
 
-#: .\portfolio_env\Lib\site-packages\django\db\models\fields\__init__.py:2115
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2115
 msgid "Text"
 msgstr ""
 
-#: .\portfolio_env\Lib\site-packages\django\db\models\fields\__init__.py:2181
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2181
 #, python-format
 msgid ""
 "“%(value)s” value has an invalid format. It must be in HH:MM[:ss[.uuuuuu]] "
 "format."
 msgstr ""
 
-#: .\portfolio_env\Lib\site-packages\django\db\models\fields\__init__.py:2183
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2183
 #, python-format
 msgid ""
 "“%(value)s” value has the correct format (HH:MM[:ss[.uuuuuu]]) but it is an "
 "invalid time."
 msgstr ""
 
-#: .\portfolio_env\Lib\site-packages\django\db\models\fields\__init__.py:2186
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2186
 msgid "Time"
 msgstr ""
 
-#: .\portfolio_env\Lib\site-packages\django\db\models\fields\__init__.py:2312
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2312
 msgid "URL"
 msgstr ""
 
-#: .\portfolio_env\Lib\site-packages\django\db\models\fields\__init__.py:2334
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2334
 msgid "Raw binary data"
 msgstr ""
 
-#: .\portfolio_env\Lib\site-packages\django\db\models\fields\__init__.py:2399
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2399
 #, python-format
 msgid "“%(value)s” is not a valid UUID."
 msgstr ""
 
-#: .\portfolio_env\Lib\site-packages\django\db\models\fields\__init__.py:2401
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2401
 msgid "Universally unique identifier"
 msgstr ""
 
-#: .\portfolio_env\Lib\site-packages\django\db\models\fields\files.py:226
+#: .\venv\Lib\site-packages\django\db\models\fields\files.py:226
 msgid "File"
 msgstr ""
 
-#: .\portfolio_env\Lib\site-packages\django\db\models\fields\files.py:375
+#: .\venv\Lib\site-packages\django\db\models\fields\files.py:375
 msgid "Image"
 msgstr ""
 
-#: .\portfolio_env\Lib\site-packages\django\db\models\fields\json.py:18
+#: .\venv\Lib\site-packages\django\db\models\fields\json.py:18
 msgid "A JSON object"
 msgstr ""
 
-#: .\portfolio_env\Lib\site-packages\django\db\models\fields\json.py:20
+#: .\venv\Lib\site-packages\django\db\models\fields\json.py:20
 msgid "Value must be valid JSON."
 msgstr ""
 
-#: .\portfolio_env\Lib\site-packages\django\db\models\fields\related.py:790
+#: .\venv\Lib\site-packages\django\db\models\fields\related.py:790
 #, python-format
 msgid "%(model)s instance with %(field)s %(value)r does not exist."
 msgstr ""
 
-#: .\portfolio_env\Lib\site-packages\django\db\models\fields\related.py:792
+#: .\venv\Lib\site-packages\django\db\models\fields\related.py:792
 msgid "Foreign Key (type determined by related field)"
 msgstr ""
 
-#: .\portfolio_env\Lib\site-packages\django\db\models\fields\related.py:1045
+#: .\venv\Lib\site-packages\django\db\models\fields\related.py:1045
 msgid "One-to-one relationship"
 msgstr ""
 
-#: .\portfolio_env\Lib\site-packages\django\db\models\fields\related.py:1099
+#: .\venv\Lib\site-packages\django\db\models\fields\related.py:1099
 #, python-format
 msgid "%(from)s-%(to)s relationship"
 msgstr ""
 
-#: .\portfolio_env\Lib\site-packages\django\db\models\fields\related.py:1100
+#: .\venv\Lib\site-packages\django\db\models\fields\related.py:1100
 #, python-format
 msgid "%(from)s-%(to)s relationships"
 msgstr ""
 
-#: .\portfolio_env\Lib\site-packages\django\db\models\fields\related.py:1142
+#: .\venv\Lib\site-packages\django\db\models\fields\related.py:1142
 msgid "Many-to-many relationship"
 msgstr ""
 
 #. Translators: If found as last label character, these punctuation
 #. characters will prevent the default label_suffix to be appended to the label
-#: .\portfolio_env\Lib\site-packages\django\forms\boundfield.py:150
+#: .\venv\Lib\site-packages\django\forms\boundfield.py:150
 msgid ":?.!"
 msgstr ""
 
-#: .\portfolio_env\Lib\site-packages\django\forms\fields.py:54
+#: .\venv\Lib\site-packages\django\forms\fields.py:54
 msgid "This field is required."
 msgstr ""
 
-#: .\portfolio_env\Lib\site-packages\django\forms\fields.py:247
+#: .\venv\Lib\site-packages\django\forms\fields.py:247
 msgid "Enter a whole number."
 msgstr ""
 
-#: .\portfolio_env\Lib\site-packages\django\forms\fields.py:402
-#: .\portfolio_env\Lib\site-packages\django\forms\fields.py:1146
+#: .\venv\Lib\site-packages\django\forms\fields.py:402
+#: .\venv\Lib\site-packages\django\forms\fields.py:1146
 msgid "Enter a valid date."
 msgstr ""
 
-#: .\portfolio_env\Lib\site-packages\django\forms\fields.py:426
-#: .\portfolio_env\Lib\site-packages\django\forms\fields.py:1147
+#: .\venv\Lib\site-packages\django\forms\fields.py:426
+#: .\venv\Lib\site-packages\django\forms\fields.py:1147
 msgid "Enter a valid time."
 msgstr ""
 
-#: .\portfolio_env\Lib\site-packages\django\forms\fields.py:454
+#: .\venv\Lib\site-packages\django\forms\fields.py:454
 msgid "Enter a valid date/time."
 msgstr ""
 
-#: .\portfolio_env\Lib\site-packages\django\forms\fields.py:488
+#: .\venv\Lib\site-packages\django\forms\fields.py:488
 msgid "Enter a valid duration."
 msgstr ""
 
-#: .\portfolio_env\Lib\site-packages\django\forms\fields.py:489
+#: .\venv\Lib\site-packages\django\forms\fields.py:489
 #, python-brace-format
 msgid "The number of days must be between {min_days} and {max_days}."
 msgstr ""
 
-#: .\portfolio_env\Lib\site-packages\django\forms\fields.py:552
+#: .\venv\Lib\site-packages\django\forms\fields.py:552
 msgid "No file was submitted. Check the encoding type on the form."
 msgstr ""
 
-#: .\portfolio_env\Lib\site-packages\django\forms\fields.py:553
+#: .\venv\Lib\site-packages\django\forms\fields.py:553
 msgid "No file was submitted."
 msgstr ""
 
-#: .\portfolio_env\Lib\site-packages\django\forms\fields.py:554
+#: .\venv\Lib\site-packages\django\forms\fields.py:554
 msgid "The submitted file is empty."
 msgstr ""
 
-#: .\portfolio_env\Lib\site-packages\django\forms\fields.py:556
+#: .\venv\Lib\site-packages\django\forms\fields.py:556
 #, python-format
 msgid "Ensure this filename has at most %(max)d character (it has %(length)d)."
 msgid_plural ""
@@ -519,551 +730,551 @@ msgid_plural ""
 msgstr[0] ""
 msgstr[1] ""
 
-#: .\portfolio_env\Lib\site-packages\django\forms\fields.py:559
+#: .\venv\Lib\site-packages\django\forms\fields.py:559
 msgid "Please either submit a file or check the clear checkbox, not both."
 msgstr ""
 
-#: .\portfolio_env\Lib\site-packages\django\forms\fields.py:620
+#: .\venv\Lib\site-packages\django\forms\fields.py:620
 msgid ""
 "Upload a valid image. The file you uploaded was either not an image or a "
 "corrupted image."
 msgstr ""
 
-#: .\portfolio_env\Lib\site-packages\django\forms\fields.py:782
-#: .\portfolio_env\Lib\site-packages\django\forms\fields.py:872
-#: .\portfolio_env\Lib\site-packages\django\forms\models.py:1309
+#: .\venv\Lib\site-packages\django\forms\fields.py:782
+#: .\venv\Lib\site-packages\django\forms\fields.py:872
+#: .\venv\Lib\site-packages\django\forms\models.py:1309
 #, python-format
 msgid "Select a valid choice. %(value)s is not one of the available choices."
 msgstr ""
 
-#: .\portfolio_env\Lib\site-packages\django\forms\fields.py:873
-#: .\portfolio_env\Lib\site-packages\django\forms\fields.py:988
-#: .\portfolio_env\Lib\site-packages\django\forms\models.py:1308
+#: .\venv\Lib\site-packages\django\forms\fields.py:873
+#: .\venv\Lib\site-packages\django\forms\fields.py:988
+#: .\venv\Lib\site-packages\django\forms\models.py:1308
 msgid "Enter a list of values."
 msgstr ""
 
-#: .\portfolio_env\Lib\site-packages\django\forms\fields.py:989
+#: .\venv\Lib\site-packages\django\forms\fields.py:989
 msgid "Enter a complete value."
 msgstr ""
 
-#: .\portfolio_env\Lib\site-packages\django\forms\fields.py:1205
+#: .\venv\Lib\site-packages\django\forms\fields.py:1205
 msgid "Enter a valid UUID."
 msgstr ""
 
-#: .\portfolio_env\Lib\site-packages\django\forms\fields.py:1235
+#: .\venv\Lib\site-packages\django\forms\fields.py:1235
 msgid "Enter a valid JSON."
 msgstr ""
 
 #. Translators: This is the default suffix added to form field labels
-#: .\portfolio_env\Lib\site-packages\django\forms\forms.py:76
+#: .\venv\Lib\site-packages\django\forms\forms.py:76
 msgid ":"
 msgstr ""
 
-#: .\portfolio_env\Lib\site-packages\django\forms\forms.py:203
+#: .\venv\Lib\site-packages\django\forms\forms.py:203
 #, python-format
 msgid "(Hidden field %(name)s) %(error)s"
 msgstr ""
 
-#: .\portfolio_env\Lib\site-packages\django\forms\formsets.py:61
+#: .\venv\Lib\site-packages\django\forms\formsets.py:61
 #, python-format
 msgid ""
 "ManagementForm data is missing or has been tampered with. Missing fields: "
 "%(field_names)s. You may need to file a bug report if the issue persists."
 msgstr ""
 
-#: .\portfolio_env\Lib\site-packages\django\forms\formsets.py:370
+#: .\venv\Lib\site-packages\django\forms\formsets.py:370
 #, python-format
 msgid "Please submit at most %d form."
 msgid_plural "Please submit at most %d forms."
 msgstr[0] ""
 msgstr[1] ""
 
-#: .\portfolio_env\Lib\site-packages\django\forms\formsets.py:377
+#: .\venv\Lib\site-packages\django\forms\formsets.py:377
 #, python-format
 msgid "Please submit at least %d form."
 msgid_plural "Please submit at least %d forms."
 msgstr[0] ""
 msgstr[1] ""
 
-#: .\portfolio_env\Lib\site-packages\django\forms\formsets.py:405
-#: .\portfolio_env\Lib\site-packages\django\forms\formsets.py:412
+#: .\venv\Lib\site-packages\django\forms\formsets.py:405
+#: .\venv\Lib\site-packages\django\forms\formsets.py:412
 msgid "Order"
 msgstr ""
 
-#: .\portfolio_env\Lib\site-packages\django\forms\formsets.py:417
+#: .\venv\Lib\site-packages\django\forms\formsets.py:417
 msgid "Delete"
 msgstr ""
 
-#: .\portfolio_env\Lib\site-packages\django\forms\models.py:763
+#: .\venv\Lib\site-packages\django\forms\models.py:763
 #, python-format
 msgid "Please correct the duplicate data for %(field)s."
 msgstr ""
 
-#: .\portfolio_env\Lib\site-packages\django\forms\models.py:767
+#: .\venv\Lib\site-packages\django\forms\models.py:767
 #, python-format
 msgid "Please correct the duplicate data for %(field)s, which must be unique."
 msgstr ""
 
-#: .\portfolio_env\Lib\site-packages\django\forms\models.py:773
+#: .\venv\Lib\site-packages\django\forms\models.py:773
 #, python-format
 msgid ""
 "Please correct the duplicate data for %(field_name)s which must be unique "
 "for the %(lookup)s in %(date_field)s."
 msgstr ""
 
-#: .\portfolio_env\Lib\site-packages\django\forms\models.py:782
+#: .\venv\Lib\site-packages\django\forms\models.py:782
 msgid "Please correct the duplicate values below."
 msgstr ""
 
-#: .\portfolio_env\Lib\site-packages\django\forms\models.py:1109
+#: .\venv\Lib\site-packages\django\forms\models.py:1109
 msgid "The inline value did not match the parent instance."
 msgstr ""
 
-#: .\portfolio_env\Lib\site-packages\django\forms\models.py:1193
+#: .\venv\Lib\site-packages\django\forms\models.py:1193
 msgid "Select a valid choice. That choice is not one of the available choices."
 msgstr ""
 
-#: .\portfolio_env\Lib\site-packages\django\forms\models.py:1311
+#: .\venv\Lib\site-packages\django\forms\models.py:1311
 #, python-format
 msgid "“%(pk)s” is not a valid value."
 msgstr ""
 
-#: .\portfolio_env\Lib\site-packages\django\forms\utils.py:172
+#: .\venv\Lib\site-packages\django\forms\utils.py:172
 #, python-format
 msgid ""
 "%(datetime)s couldn’t be interpreted in time zone %(current_timezone)s; it "
 "may be ambiguous or it may not exist."
 msgstr ""
 
-#: .\portfolio_env\Lib\site-packages\django\forms\widgets.py:427
+#: .\venv\Lib\site-packages\django\forms\widgets.py:427
 msgid "Clear"
 msgstr ""
 
-#: .\portfolio_env\Lib\site-packages\django\forms\widgets.py:428
+#: .\venv\Lib\site-packages\django\forms\widgets.py:428
 msgid "Currently"
 msgstr ""
 
-#: .\portfolio_env\Lib\site-packages\django\forms\widgets.py:429
+#: .\venv\Lib\site-packages\django\forms\widgets.py:429
 msgid "Change"
 msgstr ""
 
-#: .\portfolio_env\Lib\site-packages\django\forms\widgets.py:738
+#: .\venv\Lib\site-packages\django\forms\widgets.py:738
 msgid "Unknown"
 msgstr ""
 
-#: .\portfolio_env\Lib\site-packages\django\forms\widgets.py:739
+#: .\venv\Lib\site-packages\django\forms\widgets.py:739
 msgid "Yes"
 msgstr ""
 
-#: .\portfolio_env\Lib\site-packages\django\forms\widgets.py:740
+#: .\venv\Lib\site-packages\django\forms\widgets.py:740
 msgid "No"
 msgstr ""
 
 #. Translators: Please do not add spaces around commas.
-#: .\portfolio_env\Lib\site-packages\django\template\defaultfilters.py:817
+#: .\venv\Lib\site-packages\django\template\defaultfilters.py:817
 msgid "yes,no,maybe"
 msgstr ""
 
-#: .\portfolio_env\Lib\site-packages\django\template\defaultfilters.py:846
-#: .\portfolio_env\Lib\site-packages\django\template\defaultfilters.py:863
+#: .\venv\Lib\site-packages\django\template\defaultfilters.py:846
+#: .\venv\Lib\site-packages\django\template\defaultfilters.py:863
 #, python-format
 msgid "%(size)d byte"
 msgid_plural "%(size)d bytes"
 msgstr[0] ""
 msgstr[1] ""
 
-#: .\portfolio_env\Lib\site-packages\django\template\defaultfilters.py:865
+#: .\venv\Lib\site-packages\django\template\defaultfilters.py:865
 #, python-format
 msgid "%s KB"
 msgstr ""
 
-#: .\portfolio_env\Lib\site-packages\django\template\defaultfilters.py:867
+#: .\venv\Lib\site-packages\django\template\defaultfilters.py:867
 #, python-format
 msgid "%s MB"
 msgstr ""
 
-#: .\portfolio_env\Lib\site-packages\django\template\defaultfilters.py:869
+#: .\venv\Lib\site-packages\django\template\defaultfilters.py:869
 #, python-format
 msgid "%s GB"
 msgstr ""
 
-#: .\portfolio_env\Lib\site-packages\django\template\defaultfilters.py:871
+#: .\venv\Lib\site-packages\django\template\defaultfilters.py:871
 #, python-format
 msgid "%s TB"
 msgstr ""
 
-#: .\portfolio_env\Lib\site-packages\django\template\defaultfilters.py:873
+#: .\venv\Lib\site-packages\django\template\defaultfilters.py:873
 #, python-format
 msgid "%s PB"
 msgstr ""
 
-#: .\portfolio_env\Lib\site-packages\django\utils\dateformat.py:66
+#: .\venv\Lib\site-packages\django\utils\dateformat.py:66
 msgid "p.m."
 msgstr ""
 
-#: .\portfolio_env\Lib\site-packages\django\utils\dateformat.py:67
+#: .\venv\Lib\site-packages\django\utils\dateformat.py:67
 msgid "a.m."
 msgstr ""
 
-#: .\portfolio_env\Lib\site-packages\django\utils\dateformat.py:72
+#: .\venv\Lib\site-packages\django\utils\dateformat.py:72
 msgid "PM"
 msgstr ""
 
-#: .\portfolio_env\Lib\site-packages\django\utils\dateformat.py:73
+#: .\venv\Lib\site-packages\django\utils\dateformat.py:73
 msgid "AM"
 msgstr ""
 
-#: .\portfolio_env\Lib\site-packages\django\utils\dateformat.py:146
+#: .\venv\Lib\site-packages\django\utils\dateformat.py:146
 msgid "midnight"
 msgstr ""
 
-#: .\portfolio_env\Lib\site-packages\django\utils\dateformat.py:148
+#: .\venv\Lib\site-packages\django\utils\dateformat.py:148
 msgid "noon"
 msgstr ""
 
-#: .\portfolio_env\Lib\site-packages\django\utils\dates.py:6
+#: .\venv\Lib\site-packages\django\utils\dates.py:6
 msgid "Monday"
 msgstr ""
 
-#: .\portfolio_env\Lib\site-packages\django\utils\dates.py:6
+#: .\venv\Lib\site-packages\django\utils\dates.py:6
 msgid "Tuesday"
 msgstr ""
 
-#: .\portfolio_env\Lib\site-packages\django\utils\dates.py:6
+#: .\venv\Lib\site-packages\django\utils\dates.py:6
 msgid "Wednesday"
 msgstr ""
 
-#: .\portfolio_env\Lib\site-packages\django\utils\dates.py:6
+#: .\venv\Lib\site-packages\django\utils\dates.py:6
 msgid "Thursday"
 msgstr ""
 
-#: .\portfolio_env\Lib\site-packages\django\utils\dates.py:6
+#: .\venv\Lib\site-packages\django\utils\dates.py:6
 msgid "Friday"
 msgstr ""
 
-#: .\portfolio_env\Lib\site-packages\django\utils\dates.py:7
+#: .\venv\Lib\site-packages\django\utils\dates.py:7
 msgid "Saturday"
 msgstr ""
 
-#: .\portfolio_env\Lib\site-packages\django\utils\dates.py:7
+#: .\venv\Lib\site-packages\django\utils\dates.py:7
 msgid "Sunday"
 msgstr ""
 
-#: .\portfolio_env\Lib\site-packages\django\utils\dates.py:10
+#: .\venv\Lib\site-packages\django\utils\dates.py:10
 msgid "Mon"
 msgstr ""
 
-#: .\portfolio_env\Lib\site-packages\django\utils\dates.py:10
+#: .\venv\Lib\site-packages\django\utils\dates.py:10
 msgid "Tue"
 msgstr ""
 
-#: .\portfolio_env\Lib\site-packages\django\utils\dates.py:10
+#: .\venv\Lib\site-packages\django\utils\dates.py:10
 msgid "Wed"
 msgstr ""
 
-#: .\portfolio_env\Lib\site-packages\django\utils\dates.py:10
+#: .\venv\Lib\site-packages\django\utils\dates.py:10
 msgid "Thu"
 msgstr ""
 
-#: .\portfolio_env\Lib\site-packages\django\utils\dates.py:10
+#: .\venv\Lib\site-packages\django\utils\dates.py:10
 msgid "Fri"
 msgstr ""
 
-#: .\portfolio_env\Lib\site-packages\django\utils\dates.py:11
+#: .\venv\Lib\site-packages\django\utils\dates.py:11
 msgid "Sat"
 msgstr ""
 
-#: .\portfolio_env\Lib\site-packages\django\utils\dates.py:11
+#: .\venv\Lib\site-packages\django\utils\dates.py:11
 msgid "Sun"
 msgstr ""
 
-#: .\portfolio_env\Lib\site-packages\django\utils\dates.py:14
+#: .\venv\Lib\site-packages\django\utils\dates.py:14
 msgid "January"
 msgstr ""
 
-#: .\portfolio_env\Lib\site-packages\django\utils\dates.py:14
+#: .\venv\Lib\site-packages\django\utils\dates.py:14
 msgid "February"
 msgstr ""
 
-#: .\portfolio_env\Lib\site-packages\django\utils\dates.py:14
+#: .\venv\Lib\site-packages\django\utils\dates.py:14
 msgid "March"
 msgstr ""
 
-#: .\portfolio_env\Lib\site-packages\django\utils\dates.py:14
+#: .\venv\Lib\site-packages\django\utils\dates.py:14
 msgid "April"
 msgstr ""
 
-#: .\portfolio_env\Lib\site-packages\django\utils\dates.py:14
+#: .\venv\Lib\site-packages\django\utils\dates.py:14
 msgid "May"
 msgstr ""
 
-#: .\portfolio_env\Lib\site-packages\django\utils\dates.py:14
+#: .\venv\Lib\site-packages\django\utils\dates.py:14
 msgid "June"
 msgstr ""
 
-#: .\portfolio_env\Lib\site-packages\django\utils\dates.py:15
+#: .\venv\Lib\site-packages\django\utils\dates.py:15
 msgid "July"
 msgstr ""
 
-#: .\portfolio_env\Lib\site-packages\django\utils\dates.py:15
+#: .\venv\Lib\site-packages\django\utils\dates.py:15
 msgid "August"
 msgstr ""
 
-#: .\portfolio_env\Lib\site-packages\django\utils\dates.py:15
+#: .\venv\Lib\site-packages\django\utils\dates.py:15
 msgid "September"
 msgstr ""
 
-#: .\portfolio_env\Lib\site-packages\django\utils\dates.py:15
+#: .\venv\Lib\site-packages\django\utils\dates.py:15
 msgid "October"
 msgstr ""
 
-#: .\portfolio_env\Lib\site-packages\django\utils\dates.py:15
+#: .\venv\Lib\site-packages\django\utils\dates.py:15
 msgid "November"
 msgstr ""
 
-#: .\portfolio_env\Lib\site-packages\django\utils\dates.py:16
+#: .\venv\Lib\site-packages\django\utils\dates.py:16
 msgid "December"
 msgstr ""
 
-#: .\portfolio_env\Lib\site-packages\django\utils\dates.py:19
+#: .\venv\Lib\site-packages\django\utils\dates.py:19
 msgid "jan"
 msgstr ""
 
-#: .\portfolio_env\Lib\site-packages\django\utils\dates.py:19
+#: .\venv\Lib\site-packages\django\utils\dates.py:19
 msgid "feb"
 msgstr ""
 
-#: .\portfolio_env\Lib\site-packages\django\utils\dates.py:19
+#: .\venv\Lib\site-packages\django\utils\dates.py:19
 msgid "mar"
 msgstr ""
 
-#: .\portfolio_env\Lib\site-packages\django\utils\dates.py:19
+#: .\venv\Lib\site-packages\django\utils\dates.py:19
 msgid "apr"
 msgstr ""
 
-#: .\portfolio_env\Lib\site-packages\django\utils\dates.py:19
+#: .\venv\Lib\site-packages\django\utils\dates.py:19
 msgid "may"
 msgstr ""
 
-#: .\portfolio_env\Lib\site-packages\django\utils\dates.py:19
+#: .\venv\Lib\site-packages\django\utils\dates.py:19
 msgid "jun"
 msgstr ""
 
-#: .\portfolio_env\Lib\site-packages\django\utils\dates.py:20
+#: .\venv\Lib\site-packages\django\utils\dates.py:20
 msgid "jul"
 msgstr ""
 
-#: .\portfolio_env\Lib\site-packages\django\utils\dates.py:20
+#: .\venv\Lib\site-packages\django\utils\dates.py:20
 msgid "aug"
 msgstr ""
 
-#: .\portfolio_env\Lib\site-packages\django\utils\dates.py:20
+#: .\venv\Lib\site-packages\django\utils\dates.py:20
 msgid "sep"
 msgstr ""
 
-#: .\portfolio_env\Lib\site-packages\django\utils\dates.py:20
+#: .\venv\Lib\site-packages\django\utils\dates.py:20
 msgid "oct"
 msgstr ""
 
-#: .\portfolio_env\Lib\site-packages\django\utils\dates.py:20
+#: .\venv\Lib\site-packages\django\utils\dates.py:20
 msgid "nov"
 msgstr ""
 
-#: .\portfolio_env\Lib\site-packages\django\utils\dates.py:20
+#: .\venv\Lib\site-packages\django\utils\dates.py:20
 msgid "dec"
 msgstr ""
 
-#: .\portfolio_env\Lib\site-packages\django\utils\dates.py:23
+#: .\venv\Lib\site-packages\django\utils\dates.py:23
 msgctxt "abbrev. month"
 msgid "Jan."
 msgstr ""
 
-#: .\portfolio_env\Lib\site-packages\django\utils\dates.py:24
+#: .\venv\Lib\site-packages\django\utils\dates.py:24
 msgctxt "abbrev. month"
 msgid "Feb."
 msgstr ""
 
-#: .\portfolio_env\Lib\site-packages\django\utils\dates.py:25
+#: .\venv\Lib\site-packages\django\utils\dates.py:25
 msgctxt "abbrev. month"
 msgid "March"
 msgstr ""
 
-#: .\portfolio_env\Lib\site-packages\django\utils\dates.py:26
+#: .\venv\Lib\site-packages\django\utils\dates.py:26
 msgctxt "abbrev. month"
 msgid "April"
 msgstr ""
 
-#: .\portfolio_env\Lib\site-packages\django\utils\dates.py:27
+#: .\venv\Lib\site-packages\django\utils\dates.py:27
 msgctxt "abbrev. month"
 msgid "May"
 msgstr ""
 
-#: .\portfolio_env\Lib\site-packages\django\utils\dates.py:28
+#: .\venv\Lib\site-packages\django\utils\dates.py:28
 msgctxt "abbrev. month"
 msgid "June"
 msgstr ""
 
-#: .\portfolio_env\Lib\site-packages\django\utils\dates.py:29
+#: .\venv\Lib\site-packages\django\utils\dates.py:29
 msgctxt "abbrev. month"
 msgid "July"
 msgstr ""
 
-#: .\portfolio_env\Lib\site-packages\django\utils\dates.py:30
+#: .\venv\Lib\site-packages\django\utils\dates.py:30
 msgctxt "abbrev. month"
 msgid "Aug."
 msgstr ""
 
-#: .\portfolio_env\Lib\site-packages\django\utils\dates.py:31
+#: .\venv\Lib\site-packages\django\utils\dates.py:31
 msgctxt "abbrev. month"
 msgid "Sept."
 msgstr ""
 
-#: .\portfolio_env\Lib\site-packages\django\utils\dates.py:32
+#: .\venv\Lib\site-packages\django\utils\dates.py:32
 msgctxt "abbrev. month"
 msgid "Oct."
 msgstr ""
 
-#: .\portfolio_env\Lib\site-packages\django\utils\dates.py:33
+#: .\venv\Lib\site-packages\django\utils\dates.py:33
 msgctxt "abbrev. month"
 msgid "Nov."
 msgstr ""
 
-#: .\portfolio_env\Lib\site-packages\django\utils\dates.py:34
+#: .\venv\Lib\site-packages\django\utils\dates.py:34
 msgctxt "abbrev. month"
 msgid "Dec."
 msgstr ""
 
-#: .\portfolio_env\Lib\site-packages\django\utils\dates.py:37
+#: .\venv\Lib\site-packages\django\utils\dates.py:37
 msgctxt "alt. month"
 msgid "January"
 msgstr ""
 
-#: .\portfolio_env\Lib\site-packages\django\utils\dates.py:38
+#: .\venv\Lib\site-packages\django\utils\dates.py:38
 msgctxt "alt. month"
 msgid "February"
 msgstr ""
 
-#: .\portfolio_env\Lib\site-packages\django\utils\dates.py:39
+#: .\venv\Lib\site-packages\django\utils\dates.py:39
 msgctxt "alt. month"
 msgid "March"
 msgstr ""
 
-#: .\portfolio_env\Lib\site-packages\django\utils\dates.py:40
+#: .\venv\Lib\site-packages\django\utils\dates.py:40
 msgctxt "alt. month"
 msgid "April"
 msgstr ""
 
-#: .\portfolio_env\Lib\site-packages\django\utils\dates.py:41
+#: .\venv\Lib\site-packages\django\utils\dates.py:41
 msgctxt "alt. month"
 msgid "May"
 msgstr ""
 
-#: .\portfolio_env\Lib\site-packages\django\utils\dates.py:42
+#: .\venv\Lib\site-packages\django\utils\dates.py:42
 msgctxt "alt. month"
 msgid "June"
 msgstr ""
 
-#: .\portfolio_env\Lib\site-packages\django\utils\dates.py:43
+#: .\venv\Lib\site-packages\django\utils\dates.py:43
 msgctxt "alt. month"
 msgid "July"
 msgstr ""
 
-#: .\portfolio_env\Lib\site-packages\django\utils\dates.py:44
+#: .\venv\Lib\site-packages\django\utils\dates.py:44
 msgctxt "alt. month"
 msgid "August"
 msgstr ""
 
-#: .\portfolio_env\Lib\site-packages\django\utils\dates.py:45
+#: .\venv\Lib\site-packages\django\utils\dates.py:45
 msgctxt "alt. month"
 msgid "September"
 msgstr ""
 
-#: .\portfolio_env\Lib\site-packages\django\utils\dates.py:46
+#: .\venv\Lib\site-packages\django\utils\dates.py:46
 msgctxt "alt. month"
 msgid "October"
 msgstr ""
 
-#: .\portfolio_env\Lib\site-packages\django\utils\dates.py:47
+#: .\venv\Lib\site-packages\django\utils\dates.py:47
 msgctxt "alt. month"
 msgid "November"
 msgstr ""
 
-#: .\portfolio_env\Lib\site-packages\django\utils\dates.py:48
+#: .\venv\Lib\site-packages\django\utils\dates.py:48
 msgctxt "alt. month"
 msgid "December"
 msgstr ""
 
-#: .\portfolio_env\Lib\site-packages\django\utils\ipv6.py:8
+#: .\venv\Lib\site-packages\django\utils\ipv6.py:8
 msgid "This is not a valid IPv6 address."
 msgstr ""
 
-#: .\portfolio_env\Lib\site-packages\django\utils\text.py:131
+#: .\venv\Lib\site-packages\django\utils\text.py:131
 #, python-format
 msgctxt "String to return when truncating text"
 msgid "%(truncated_text)s…"
 msgstr ""
 
-#: .\portfolio_env\Lib\site-packages\django\utils\text.py:309
+#: .\venv\Lib\site-packages\django\utils\text.py:309
 msgid "or"
 msgstr ""
 
 #. Translators: This string is used as a separator between list elements
-#: .\portfolio_env\Lib\site-packages\django\utils\text.py:328
-#: .\portfolio_env\Lib\site-packages\django\utils\timesince.py:94
+#: .\venv\Lib\site-packages\django\utils\text.py:328
+#: .\venv\Lib\site-packages\django\utils\timesince.py:94
 msgid ", "
 msgstr ""
 
-#: .\portfolio_env\Lib\site-packages\django\utils\timesince.py:9
+#: .\venv\Lib\site-packages\django\utils\timesince.py:9
 #, python-format
 msgid "%d year"
 msgid_plural "%d years"
 msgstr[0] ""
 msgstr[1] ""
 
-#: .\portfolio_env\Lib\site-packages\django\utils\timesince.py:10
+#: .\venv\Lib\site-packages\django\utils\timesince.py:10
 #, python-format
 msgid "%d month"
 msgid_plural "%d months"
 msgstr[0] ""
 msgstr[1] ""
 
-#: .\portfolio_env\Lib\site-packages\django\utils\timesince.py:11
+#: .\venv\Lib\site-packages\django\utils\timesince.py:11
 #, python-format
 msgid "%d week"
 msgid_plural "%d weeks"
 msgstr[0] ""
 msgstr[1] ""
 
-#: .\portfolio_env\Lib\site-packages\django\utils\timesince.py:12
+#: .\venv\Lib\site-packages\django\utils\timesince.py:12
 #, python-format
 msgid "%d day"
 msgid_plural "%d days"
 msgstr[0] ""
 msgstr[1] ""
 
-#: .\portfolio_env\Lib\site-packages\django\utils\timesince.py:13
+#: .\venv\Lib\site-packages\django\utils\timesince.py:13
 #, python-format
 msgid "%d hour"
 msgid_plural "%d hours"
 msgstr[0] ""
 msgstr[1] ""
 
-#: .\portfolio_env\Lib\site-packages\django\utils\timesince.py:14
+#: .\venv\Lib\site-packages\django\utils\timesince.py:14
 #, python-format
 msgid "%d minute"
 msgid_plural "%d minutes"
 msgstr[0] ""
 msgstr[1] ""
 
-#: .\portfolio_env\Lib\site-packages\django\views\csrf.py:110
+#: .\venv\Lib\site-packages\django\views\csrf.py:110
 msgid "Forbidden"
 msgstr ""
 
-#: .\portfolio_env\Lib\site-packages\django\views\csrf.py:111
+#: .\venv\Lib\site-packages\django\views\csrf.py:111
 msgid "CSRF verification failed. Request aborted."
 msgstr ""
 
-#: .\portfolio_env\Lib\site-packages\django\views\csrf.py:115
+#: .\venv\Lib\site-packages\django\views\csrf.py:115
 msgid ""
 "You are seeing this message because this HTTPS site requires a “Referer "
 "header” to be sent by your Web browser, but none was sent. This header is "
@@ -1071,14 +1282,14 @@ msgid ""
 "hijacked by third parties."
 msgstr ""
 
-#: .\portfolio_env\Lib\site-packages\django\views\csrf.py:120
+#: .\venv\Lib\site-packages\django\views\csrf.py:120
 msgid ""
 "If you have configured your browser to disable “Referer” headers, please re-"
 "enable them, at least for this site, or for HTTPS connections, or for “same-"
 "origin” requests."
 msgstr ""
 
-#: .\portfolio_env\Lib\site-packages\django\views\csrf.py:124
+#: .\venv\Lib\site-packages\django\views\csrf.py:124
 msgid ""
 "If you are using the <meta name=\"referrer\" content=\"no-referrer\"> tag or "
 "including the “Referrer-Policy: no-referrer” header, please remove them. The "
@@ -1087,109 +1298,109 @@ msgid ""
 "rel=\"noreferrer\" …> for links to third-party sites."
 msgstr ""
 
-#: .\portfolio_env\Lib\site-packages\django\views\csrf.py:132
+#: .\venv\Lib\site-packages\django\views\csrf.py:132
 msgid ""
 "You are seeing this message because this site requires a CSRF cookie when "
 "submitting forms. This cookie is required for security reasons, to ensure "
 "that your browser is not being hijacked by third parties."
 msgstr ""
 
-#: .\portfolio_env\Lib\site-packages\django\views\csrf.py:137
+#: .\venv\Lib\site-packages\django\views\csrf.py:137
 msgid ""
 "If you have configured your browser to disable cookies, please re-enable "
 "them, at least for this site, or for “same-origin” requests."
 msgstr ""
 
-#: .\portfolio_env\Lib\site-packages\django\views\csrf.py:142
+#: .\venv\Lib\site-packages\django\views\csrf.py:142
 msgid "More information is available with DEBUG=True."
 msgstr ""
 
-#: .\portfolio_env\Lib\site-packages\django\views\generic\dates.py:41
+#: .\venv\Lib\site-packages\django\views\generic\dates.py:41
 msgid "No year specified"
 msgstr ""
 
-#: .\portfolio_env\Lib\site-packages\django\views\generic\dates.py:61
-#: .\portfolio_env\Lib\site-packages\django\views\generic\dates.py:111
-#: .\portfolio_env\Lib\site-packages\django\views\generic\dates.py:208
+#: .\venv\Lib\site-packages\django\views\generic\dates.py:61
+#: .\venv\Lib\site-packages\django\views\generic\dates.py:111
+#: .\venv\Lib\site-packages\django\views\generic\dates.py:208
 msgid "Date out of range"
 msgstr ""
 
-#: .\portfolio_env\Lib\site-packages\django\views\generic\dates.py:90
+#: .\venv\Lib\site-packages\django\views\generic\dates.py:90
 msgid "No month specified"
 msgstr ""
 
-#: .\portfolio_env\Lib\site-packages\django\views\generic\dates.py:142
+#: .\venv\Lib\site-packages\django\views\generic\dates.py:142
 msgid "No day specified"
 msgstr ""
 
-#: .\portfolio_env\Lib\site-packages\django\views\generic\dates.py:188
+#: .\venv\Lib\site-packages\django\views\generic\dates.py:188
 msgid "No week specified"
 msgstr ""
 
-#: .\portfolio_env\Lib\site-packages\django\views\generic\dates.py:338
-#: .\portfolio_env\Lib\site-packages\django\views\generic\dates.py:367
+#: .\venv\Lib\site-packages\django\views\generic\dates.py:338
+#: .\venv\Lib\site-packages\django\views\generic\dates.py:367
 #, python-format
 msgid "No %(verbose_name_plural)s available"
 msgstr ""
 
-#: .\portfolio_env\Lib\site-packages\django\views\generic\dates.py:594
+#: .\venv\Lib\site-packages\django\views\generic\dates.py:594
 #, python-format
 msgid ""
 "Future %(verbose_name_plural)s not available because %(class_name)s."
 "allow_future is False."
 msgstr ""
 
-#: .\portfolio_env\Lib\site-packages\django\views\generic\dates.py:628
+#: .\venv\Lib\site-packages\django\views\generic\dates.py:628
 #, python-format
 msgid "Invalid date string “%(datestr)s” given format “%(format)s”"
 msgstr ""
 
-#: .\portfolio_env\Lib\site-packages\django\views\generic\detail.py:54
+#: .\venv\Lib\site-packages\django\views\generic\detail.py:54
 #, python-format
 msgid "No %(verbose_name)s found matching the query"
 msgstr ""
 
-#: .\portfolio_env\Lib\site-packages\django\views\generic\list.py:67
+#: .\venv\Lib\site-packages\django\views\generic\list.py:67
 msgid "Page is not “last”, nor can it be converted to an int."
 msgstr ""
 
-#: .\portfolio_env\Lib\site-packages\django\views\generic\list.py:72
+#: .\venv\Lib\site-packages\django\views\generic\list.py:72
 #, python-format
 msgid "Invalid page (%(page_number)s): %(message)s"
 msgstr ""
 
-#: .\portfolio_env\Lib\site-packages\django\views\generic\list.py:154
+#: .\venv\Lib\site-packages\django\views\generic\list.py:154
 #, python-format
 msgid "Empty list and “%(class_name)s.allow_empty” is False."
 msgstr ""
 
-#: .\portfolio_env\Lib\site-packages\django\views\static.py:40
+#: .\venv\Lib\site-packages\django\views\static.py:40
 msgid "Directory indexes are not allowed here."
 msgstr ""
 
-#: .\portfolio_env\Lib\site-packages\django\views\static.py:42
+#: .\venv\Lib\site-packages\django\views\static.py:42
 #, python-format
 msgid "“%(path)s” does not exist"
 msgstr ""
 
-#: .\portfolio_env\Lib\site-packages\django\views\static.py:80
+#: .\venv\Lib\site-packages\django\views\static.py:80
 #, python-format
 msgid "Index of %(directory)s"
 msgstr ""
 
-#: .\portfolio_env\Lib\site-packages\django\views\templates\default_urlconf.html:7
-#: .\portfolio_env\Lib\site-packages\django\views\templates\default_urlconf.html:221
+#: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:7
+#: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:221
 msgid "The install worked successfully! Congratulations!"
 msgstr ""
 
-#: .\portfolio_env\Lib\site-packages\django\views\templates\default_urlconf.html:207
+#: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:207
 #, python-format
 msgid ""
 "View <a href=\"https://docs.djangoproject.com/en/%(version)s/releases/\" "
 "target=\"_blank\" rel=\"noopener\">release notes</a> for Django %(version)s"
 msgstr ""
 
-#: .\portfolio_env\Lib\site-packages\django\views\templates\default_urlconf.html:222
+#: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:222
 #, python-format
 msgid ""
 "You are seeing this page because <a href=\"https://docs.djangoproject.com/en/"
@@ -1198,26 +1409,26 @@ msgid ""
 "configured any URLs."
 msgstr ""
 
-#: .\portfolio_env\Lib\site-packages\django\views\templates\default_urlconf.html:230
+#: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:230
 msgid "Django Documentation"
 msgstr ""
 
-#: .\portfolio_env\Lib\site-packages\django\views\templates\default_urlconf.html:231
+#: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:231
 msgid "Topics, references, &amp; how-to’s"
 msgstr ""
 
-#: .\portfolio_env\Lib\site-packages\django\views\templates\default_urlconf.html:239
+#: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:239
 msgid "Tutorial: A Polling App"
 msgstr ""
 
-#: .\portfolio_env\Lib\site-packages\django\views\templates\default_urlconf.html:240
+#: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:240
 msgid "Get started with Django"
 msgstr ""
 
-#: .\portfolio_env\Lib\site-packages\django\views\templates\default_urlconf.html:248
+#: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:248
 msgid "Django Community"
 msgstr ""
 
-#: .\portfolio_env\Lib\site-packages\django\views\templates\default_urlconf.html:249
+#: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:249
 msgid "Connect, get help, or contribute"
 msgstr ""

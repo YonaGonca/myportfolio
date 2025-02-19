@@ -35,7 +35,7 @@ function applyDarkMode(enabled) {
     });
 
   } else {
-    document.cookie = "darkMode=disabled; path=/; max-age=" + 60 * 60 * 24 * 365;  // Expira en un año
+    document.cookie = "darkMode=disabled; path=/; max-age=" + 60 * 60 * 24 * 365;  // Expires in a year
 
     localStorage.setItem('darkMode', 'disabled');
     document.documentElement.style.setProperty('--title-color', 'hsl(230, 75%, 15%)');
@@ -100,7 +100,7 @@ function copyEmail() {
   });
 }
 
-/*Select Lenguage*/
+/*Select Language*/
 
 const languageBtn = document.getElementById('language-btn');
 const languageOptions = document.getElementById('language-options');
@@ -124,3 +124,5 @@ document.addEventListener('click', (e) => {
         languageOptions.classList.remove('show');
     }
 });
+
+document.cookie = "language="+languageBtn.innerHTML.toLowerCase()+"; path=/; max-age=" + 60 * 60 * 24 * 365;

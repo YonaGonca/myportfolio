@@ -7,3 +7,6 @@ todo.txt
 
 #db
 db.sqlite3
+
+#env variable
+.env

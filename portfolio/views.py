@@ -10,6 +10,10 @@ def obtain_dark_mode(request):
     dark_mode = request.COOKIES.get('darkMode')
     return dark_mode
 
+def obtain_language(request):
+    language = request.COOKIES.get('language')
+    return language
+
 def index(request):
     lang_code = request.session.get(translation.LANGUAGE_SESSION_KEY)
     dark_mode = obtain_dark_mode(request)
@@ -33,12 +37,13 @@ def projects(request):
 def aboutme(request):
     lang_code = request.session.get(translation.LANGUAGE_SESSION_KEY)
     dark_mode = obtain_dark_mode(request)
+    language = obtain_language(request)
     
     if lang_code:
         translation.activate(lang_code)
     else:
         translation.activate('es') 
-    return render(request, 'aboutme.html', {'dark_mode': dark_mode})
+    return render(request, 'aboutme.html', {'dark_mode': dark_mode, 'language': language})
 
 def change_language(request, lang_code):
     translation.activate(lang_code)  
