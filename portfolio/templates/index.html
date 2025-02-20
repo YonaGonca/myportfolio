@@ -17,7 +17,7 @@
         <p>{% blocktrans %}On this site you can check out all the {% endblocktrans %}<a class="link_introduction" href="{% url 'projects' %}">{% blocktrans %}projects{% endblocktrans %}</a> {% blocktrans %}I've worked on, or learn more{% endblocktrans %} <a class="link_introduction" href="{% url 'aboutme' %}">{% blocktrans %}about me{% endblocktrans %}</a>.</p>
     </div>
     <div id="introduction_image">
-        <img src="{% static 'assets/images/atom.png' %}" alt="">
+        <img src="{% static 'assets/images/atom.png' %}" alt="Portfolio logo">  
     </div>
 </div>
 
@@ -29,7 +29,7 @@
 <div class="container" id="container_projects">
     <div id="projects_header">
         <h4>{% trans "Projects" %}</h4>
-        <div id="all_projects_link"><a href="{% url 'projects' %}">{% blocktrans %}All projects{% endblocktrans %}</a></div>
+        <div id="all_projects_link"><a href="{% url 'projects' %}" aria-label="Go to all Projects">{% blocktrans %}All projects{% endblocktrans %}</a></div>
 
     </div>
     <div id="projects">
@@ -42,7 +42,7 @@
                 src="{% if dark_mode == 'enabled' %}{% static 'assets/images/portfolio_dark.png' %}{% else %}{% static 'assets/images/portfolio.png' %}{% endif %}" 
                 data-light="{% static 'assets/images/portfolio.png' %}" 
                 data-dark="{% static 'assets/images/portfolio_dark.png' %}" 
-                alt="Imagen">            
+                alt="Portfolio preview in light and dark mode">            
             </div>
             <div id="project_description">
                 {% blocktrans %}The source of this website.{% endblocktrans %}
@@ -70,7 +70,7 @@
                 src="{% if dark_mode == 'enabled' %}{% static 'assets/images/portfolio_dark.png' %}{% else %}{% static 'assets/images/portfolio.png' %}{% endif %}" 
                 data-light="{% static 'assets/images/portfolio.png' %}" 
                 data-dark="{% static 'assets/images/portfolio_dark.png' %}" 
-                alt="Imagen">            
+                alt="Portfolio preview in light and dark mode">            
             </div>
             <div id="project_description">
                 {% blocktrans %}The source of this website.{% endblocktrans %}
@@ -98,7 +98,7 @@
                 src="{% if dark_mode == 'enabled' %}{% static 'assets/images/portfolio_dark.png' %}{% else %}{% static 'assets/images/portfolio.png' %}{% endif %}" 
                 data-light="{% static 'assets/images/portfolio.png' %}" 
                 data-dark="{% static 'assets/images/portfolio_dark.png' %}" 
-                alt="Imagen">            
+                alt=alt="Portfolio preview in light and dark mode">            
             </div>
 
             
@@ -123,4 +123,133 @@
         </div>
     </div>
 </div>
+<div class="container" id="container_skills">
+    <div id="skills_header">
+        <h4>{% blocktrans %}Skills{% endblocktrans %}</h4>
+    </div>
+    <div id="skills_boxes">
+        <div id="box1" class="box">
+            <h5>{% blocktrans %}Proficient{% endblocktrans %}</h5>
+            <div class="skills_box_container">
+                <div class="skill">
+                    <img src="{% static 'assets/icons/python.svg' %}" alt="Python logo">
+                    <h6>Python</h6>
+                </div>
+                <div class="skill">
+                    <img src="{% static 'assets/icons/postgresql.png' %}" alt="PostgreSQL logo">
+                    <h6>PostgreSQL</h6>
+                </div>
+                <div class="skill">
+                    <img src="{% static 'assets/icons/html.svg' %}" alt="HTML5 logo">
+                    <h6>HTML5</h6>
+                </div>
+                <div class="skill">
+                    <img src="{% static 'assets/icons/css3.svg' %}" alt="CSS3 logo">
+                    <h6>CSS3</h6>
+                </div>
+                <div class="skill">
+                    <img src="{% static 'assets/icons/javascript.svg' %}" alt="JavaScript logo">
+                    <h6>JavaScript</h6>
+                </div>
+                <div class="skill">
+                    <img class="project_image_change" 
+                    src="{% if dark_mode == 'enabled' %}{% static 'assets/icons/django-darkmode.png' %}{% else %}{% static 'assets/icons/django.png' %}{% endif %}" 
+                    data-light="{% static 'assets/icons/django.png' %}" 
+                    data-dark="{% static 'assets/icons/django-darkmode.png' %}" 
+                    alt="Django logo">   
+                    <h6>django</h6>
+                </div>
+
+            </div>
+        </div>
+        <div id="box2" class="box">
+            <h5>{% blocktrans %}Learning{% endblocktrans %}</h5>
+            <div class="skills_box_container">
+                <div class="skill">
+                    <img class="project_image_change" 
+                    src="{% if dark_mode == 'enabled' %}{% static 'assets/icons/drf-darkmode.png' %}{% else %}{% static 'assets/icons/drf.png' %}{% endif %}" 
+                    data-light="{% static 'assets/icons/drf.png' %}" 
+                    data-dark="{% static 'assets/icons/drf-darkmode.png' %}" 
+                    alt="Django REST Framework logo">   
+                    <h6>DRF</h6>
+                </div>
+                <div class="skill">
+
+                    <h6></h6>
+                </div>
+                <div class="skill">
+
+                    <h6></h6>
+                </div>
+            </div>
+        </div>
+        <div id="box3" class="box">
+            <h5>{% blocktrans %}Interested{% endblocktrans %}</h5>
+            <div class="skills_box_container">
+                <div class="skill">
+                    <img src="{% static 'assets/icons/postman.svg' %}" alt="Postman logo">
+                    <h6>Postman</h6>
+                </div>
+                <div class="skill">
+                    <img src="{% static 'assets/icons/redis.png' %}" alt="Redis logo">
+                    <h6>Redis</h6>
+                </div>
+                <div class="skill">
+                    <img src="{% static 'assets/icons/linux.png' %}" alt="Linux logo">
+                    <h6>Linux</h6>
+                </div>
+                <div class="skill">
+                    <img src="{% static 'assets/icons/docker.png' %}" alt="Docker logo">
+                    <h6>Docker</h6>
+                </div>
+                <div class="skill">
+                    <img src="{% static 'assets/icons/Kubernetes.png' %}" alt="Kubernetes logo">
+                    <h6>Kubernetes</h6>
+                </div>
+                <div class="skill">
+                    <img src="{% static 'assets/icons/pytest.png' %}" alt="pytest logo">
+                    <h6>pytest</h6>
+                </div>
+            </div>
+        </div>
+        <div id="box3" class="box">
+            <h5>{% blocktrans %}Tools{% endblocktrans %}</h5>
+            <div class="skills_box_container">
+                <div class="skill">
+                    <img src="{% static 'assets/icons/vsc.png' %}" alt="Visual Studio Code logo">
+                    <h6>VSCode</h6>
+                </div>
+                <div class="skill">
+                    <img src="{% static 'assets/icons/dbeaver.png' %}" alt="DBeaver logo">
+                    <h6>DBeaver</h6>
+                </div>
+                <div class="skill">
+                    <img src="{% static 'assets/icons/git.svg' %}" alt="Git logo">
+                    <h6>Git</h6>
+                </div>
+                <div class="skill">
+                    <img class="project_image_change" 
+                    src="{% if dark_mode == 'enabled' %}{% static 'assets/icons/github-darkmode.png' %}{% else %}{% static 'assets/icons/github.png' %}{% endif %}" 
+                    data-light="{% static 'assets/icons/github.png' %}" 
+                    data-dark="{% static 'assets/icons/github-darkmode.png' %}" 
+                    alt="Github logo">   
+                    <h6>GitHub</h6>
+                </div>
+                <div class="skill">
+                    <img class="project_image_change" 
+                    src="{% if dark_mode == 'enabled' %}{% static 'assets/icons/latex-darkmode.png' %}{% else %}{% static 'assets/icons/latex.png' %}{% endif %}" 
+                    data-light="{% static 'assets/icons/latex.png' %}" 
+                    data-dark="{% static 'assets/icons/latex-darkmode.png' %}" 
+                    alt="LATEX logo">   
+                    <h6>LATEX</h6>
+                </div>
+                <div class="skill">
+                    <img src="{% static 'assets/icons/thunder.png' %}" alt="Thunder Client logo">   
+                    <h6>Thunder Client</h6>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
 {% endblock %}

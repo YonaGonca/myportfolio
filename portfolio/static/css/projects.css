@@ -1,11 +1,16 @@
 
 #projects_header{
   display: block;
-  margin-top: -20px;
+  margin-top: 120px;
+  margin-bottom: 20px;
 }
 
 #projects_header h4{
   font-size: 50px;
+}
+
+#container_projects{
+  margin-bottom: 20px;
 }
 
 /*BREAKPOINTS*/

@@ -333,8 +333,8 @@ nav {
 /*Projects*/
 
 #container_projects{
-  margin-top: 150px;
-
+  margin-top: 100px;
+  margin-bottom: 100px;
 }
 
 #projects_header{
@@ -428,6 +428,12 @@ nav {
 }
 
 /*Skills*/
+
+#skills_header{
+  padding-left: 1%;
+  margin-bottom: 50px;
+
+}
 
 #skills_boxes {
   display: grid;
@@ -718,7 +724,6 @@ textarea.input::-webkit-scrollbar {
 /*Footer*/
 
 footer{
-  margin-top: 150px;
   text-align: center;
 }
 

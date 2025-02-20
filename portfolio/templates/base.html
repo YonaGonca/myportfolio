@@ -57,9 +57,9 @@
 
 <body>
     <header id="site-header">
-        <nav class="nav container">
+        <nav class="nav container" aria-label="Main navigation">
             <a href="{% url 'index' %}" class="nav-logo"><img src="{% static 'assets/images/atom.png' %}"
-                    alt="Logo Yonathan">Yonathan
+                    alt="Portfolio logo">Yonathan
                 Gonçalves</a>
 
             <div class="menu" id="nav-menu">
@@ -76,12 +76,12 @@
                 </ul>
 
                 <!--Close button-->
-                <i class="nav-close ri-close-line" id="nav-close"></i>
+                <i class="nav-close ri-close-line" id="nav-close" aria-label="Close menu"></i>
             </div>
 
             <div class="nav-actions">
                 <!--Language button-->
-                <div class="nav-language" id="language-btn">{{ LANGUAGE_CODE|upper }}</div>
+                <div class="nav-language" id="language-btn" aria-label="Select language">{{ LANGUAGE_CODE|upper }}</div>
                 <div class="language-options" id="language-options">
                     <div class="language-option" data-lang="en">EN</div>
                     <div class="language-option" data-lang="fr">FR</div>
@@ -91,10 +91,10 @@
 
 
                 <!--Dark Mode button-->
-                <i class="ri-moon-line nav-darkmode" id="darkmode-btn"></i>
+                <i class="ri-moon-line nav-darkmode" id="darkmode-btn" aria-label="Button dark mode"></i>
 
                 <!-- Toggle button -->
-                <i class="nav-toggle ri-menu-line" id="nav-toggle"></i>
+                <i class="nav-toggle ri-menu-line" id="nav-toggle" aria-label="Open navigation menu"></i>
             </div>
         </nav>
     </header>
@@ -122,7 +122,7 @@
                         <div class="information_item">
                             <i class="ri-mail-line info_icon"></i>
                             <p id="email">ygoncalves5@gmail.com</p>
-                            <i class="ri-checkbox-multiple-blank-line copy_icon" id="copy_icon" onclick="copyEmail()"></i>
+                            <i class="ri-checkbox-multiple-blank-line copy_icon" id="copy_icon" onclick="copyEmail()" aria-label="Copy email address"></i>
                         </div>
                         <div class="information_item">
                             <i class="ri-phone-line info_icon"></i>
@@ -139,19 +139,19 @@
                         {% csrf_token %}
                 
                         <div class="container_input">
-                            <input type="text" name="name" class="input" required>
+                            <input type="text" name="name" class="input" required aria-labelledby="id_name">
                             <label for="id_name">{% blocktrans %}Name{% endblocktrans %}</label>
                             <span>{% blocktrans %}Name{% endblocktrans %}</span>
                         </div>
                 
                         <div class="container_input">
-                            <input type="email" name="email" class="input" required>
+                            <input type="email" name="email" class="input" required aria-labelledby="id_email">
                             <label for="id_email">{% blocktrans %}Email{% endblocktrans %}</label>
                             <span>{% blocktrans %}Email{% endblocktrans %}</span>
                         </div>
                 
                         <div class="container_input textarea">
-                            <textarea name="message" class="input" required></textarea>
+                            <textarea name="message" class="input" required aria-labelledby="id_message"></textarea>
                             <label for="id_message">{% blocktrans %}Message{% endblocktrans %}</label>
                             <span>{% blocktrans %}Message{% endblocktrans %}</span>
                         </div>
@@ -167,14 +167,14 @@
         </div>
     </main>
     <footer class="container">
-        <a href="#" class="footer-logo"><img src="{% static 'assets/images/atom.png' %}" alt="Logo Yonathan"></a>
+        <a href="#" class="footer-logo"><img src="{% static 'assets/images/atom.png' %}" alt="Portfolio logo"></a>
         <div id="footer_links">
             <ul id="footer_links_list">
                 <li>
-                    <a href="https://github.com/YonaGonca" class="footer_link">GitHub <i class="ri-github-fill"></i> </a>
+                    <a href="https://github.com/YonaGonca" class="footer_link" aria-label="Visit my GitHub profile">GitHub <i class="ri-github-fill"></i> </a>
                 </li>
                 <li>
-                    <a href="#" class="footer_link">LinkedIn <i class="ri-linkedin-fill"></i></i></a>
+                    <a href="#" class="footer_link" aria-label="Visit my LinkedIn profile">LinkedIn <i class="ri-linkedin-fill"></i></i></a>
                 </li>
             </ul>
         </div>
