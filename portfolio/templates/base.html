@@ -7,6 +7,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="{% block meta_description %}My web development portfolio showcasing projects and skills.{% endblock %}">
+    <meta name="keywords" content="web developer, portfolio, programming, Django, Python, frontend, backend, HTML, CSS, JavaScript">
+    <meta name="author" content="Yonathan Gonçalves">
+
+    <!-- Open Graph for social media -->
+    <meta property="og:title" content="{% block og_title %}Yonathan Gonçalves - Portfolio{% endblock %}">
+    <meta property="og:description" content="{% block og_description %}Explore my web development projects.{% endblock %}">
+    <meta property="og:image" content="{% static 'assets/images/portfolio.png' %}">
+    <meta property="og:url" content="">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{% block twitter_title %}Yonathan Gonçalves - Portfolio{% endblock %}">
+    <meta name="twitter:description" content="{% block twitter_description %}Explore my web development projects.{% endblock %}">
+    <meta name="twitter:image" content="{% static 'assets/images/portfolio.png' %}">
 
     <!--ICONS-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css">
@@ -52,15 +69,14 @@
     <!--Favicon-->
     <link rel="shortcut icon" href="{% static 'assets/images/atom.png' %}" type="image/x-icon">
 
-    <title>{% block title %}Titulo{% endblock %}</title>
+    <title>{% block title %}Yonathan Gonçalves - Web Developer{% endblock %}</title>
+
 </head>
 
 <body>
     <header id="site-header">
         <nav class="nav container" aria-label="Main navigation">
-            <a href="{% url 'index' %}" class="nav-logo"><img src="{% static 'assets/images/atom.png' %}"
-                    alt="Portfolio logo">Yonathan
-                Gonçalves</a>
+            <a href="{% url 'index' %}" class="nav-logo"><img src="{% static 'assets/images/atom.png' %}" alt="Yonathan Gonçalves Portfolio - Logo">Yonathan Gonçalves</a>
 
             <div class="menu" id="nav-menu">
                 <ul class="nav-list">
@@ -91,10 +107,10 @@
 
 
                 <!--Dark Mode button-->
-                <i class="ri-moon-line nav-darkmode" id="darkmode-btn" aria-label="Button dark mode"></i>
+                <i class="ri-moon-line nav-darkmode" id="darkmode-btn" aria-label="Toggle dark mode"></i>
 
                 <!-- Toggle button -->
-                <i class="nav-toggle ri-menu-line" id="nav-toggle" aria-label="Open navigation menu"></i>
+                <i class="nav-toggle ri-menu-line" id="nav-toggle" aria-label="Open main menu"></i>
             </div>
         </nav>
     </header>
@@ -122,7 +138,7 @@
                         <div class="information_item">
                             <i class="ri-mail-line info_icon"></i>
                             <p id="email">ygoncalves5@gmail.com</p>
-                            <i class="ri-checkbox-multiple-blank-line copy_icon" id="copy_icon" onclick="copyEmail()" aria-label="Copy email address"></i>
+                            <i class="ri-checkbox-multiple-blank-line copy_icon" id="copy_icon" onclick="copyEmail()" aria-label="Copy email address" role="button"></i>
                         </div>
                         <div class="information_item">
                             <i class="ri-phone-line info_icon"></i>
@@ -167,7 +183,7 @@
         </div>
     </main>
     <footer class="container">
-        <a href="#" class="footer-logo"><img src="{% static 'assets/images/atom.png' %}" alt="Portfolio logo"></a>
+        <a href="#" class="footer-logo"><img src="{% static 'assets/images/atom.png' %}" alt="Yonathan Gonçalves Portfolio - Logo"></a>
         <div id="footer_links">
             <ul id="footer_links_list">
                 <li>

@@ -39,15 +39,15 @@
 
 
 </div>
-<div class="container" id="container_cv" aria-label="Download CV">
+<div class="container" id="container_cv">
     {% if language == 'en' %}
-        <a href="{% static 'assets/others/CV-Yonathan-Ferreira_en.pdf' %}" target="_blank" class="cv_link">CV <i class="ri-file-download-line"></i></a>
+        <a href="{% static 'assets/others/CV-Yonathan-Ferreira_en.pdf' %}" target="_blank" class="cv_link" aria-label="Download CV">CV <i class="ri-file-download-line"></i></a>
     {% elif language == 'pt' %}
-        <a href="{% static 'assets/others/CV-Yonathan-Ferreira_pt.pdf' %}" target="_blank" class="cv_link">CV <i class="ri-file-download-line"></i></a>
+        <a href="{% static 'assets/others/CV-Yonathan-Ferreira_pt.pdf' %}" target="_blank" class="cv_link" aria-label="Download CV">CV <i class="ri-file-download-line"></i></a>
     {% elif language == 'es' %}
-        <a href="{% static 'assets/others/CV-Yonathan-Ferreira_es.pdf' %}" target="_blank" class="cv_link">CV <i class="ri-file-download-line"></i></a>
+        <a href="{% static 'assets/others/CV-Yonathan-Ferreira_es.pdf' %}" target="_blank" class="cv_link" aria-label="Download CV">CV <i class="ri-file-download-line"></i></a>
     {% elif language == 'fr' %}
-        <a href="{% static 'assets/others/CV-Yonathan-Ferreira_fr.pdf' %}" target="_blank" class="cv_link">CV <i class="ri-file-download-line"></i></a>
+        <a href="{% static 'assets/others/CV-Yonathan-Ferreira_fr.pdf' %}" target="_blank" class="cv_link" aria-label="Download CV">CV <i class="ri-file-download-line"></i></a>
     {% endif %}
 
 </div>
@@ -140,7 +140,7 @@
                 </div>
             </div>
         </div>
-        <div id="box3" class="box">
+        <div id="box4" class="box">
             <h5>{% blocktrans %}Tools{% endblocktrans %}</h5>
             <div class="skills_box_container">
                 <div class="skill">

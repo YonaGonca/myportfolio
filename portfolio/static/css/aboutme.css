@@ -9,14 +9,14 @@
 
 #container_cv{
     width: 500px;
-    margin: 0 auto;
+    margin: 0px auto;
+    margin-top: 20px !important;
     text-align: center;
 }
 
 .cv_link{
     width: 120px;
     padding: .5rem 1rem;
-    margin: .2rem .8rem;
     border: 2px solid var(--text-color);
     border-radius: 12px;
     font-size: 1rem;
@@ -30,7 +30,7 @@
 
   
 #container_aboutme{
-    margin-top: 130px;
+    margin-top: 120px;
     margin-bottom: 10px;
 }
 
