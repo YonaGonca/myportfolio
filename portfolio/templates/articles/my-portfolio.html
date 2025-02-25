@@ -18,14 +18,37 @@
         <p class="date">{{ project.date }}</p>
     </div>
     <div id="article_body">
+        <p>I created this portfolio project to showcase my skills as a web developer and to have a platform where I can share my work, projects, and the knowledge I've gained so far. It was also an important opportunity to demonstrate what I've learned throughout my journey.</p>
+        <p>For this project, I used several key technologies. Django served as the foundation, allowing me to build a structured and maintainable web application. I used Django Templates for creating pages and its template inheritance system to streamline HTML code management.</p>
+        <p>In the following sections, I’ll highlight the key takeaways from this project, what I learned during development, and how I utilized different technologies and best practices to improve accessibility and optimize the site.</p>
+    
+        <h2>Learning Django</h2>
+    <p>For me, this portfolio project was my first real project with Django. Although I had experimented with the framework before, this was the first time I applied it to a full-scale, production-like project. Django helped me build a well-structured, scalable, and maintainable web application that I could be proud of.</p>
 
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam praesentium nihil maiores blanditiis ullam facere magni laudantium corporis, consectetur id illo autem quis ut fuga quo minus accusamus aspernatur tempora.</p>
+<p>One of the first things I learned was the importance of Django's built-in features, such as the admin panel, models, and views. I was able to manage content for my portfolio easily through the Django admin, which saved me a lot of time. The use of models for structuring my data allowed me to store and retrieve information about my projects and blog posts with ease.</p>
 
-        <h2>Lorem</h2>
+<p>In this project, I also learned how to organize and structure my Django application efficiently. The concept of views, URL routing, and templates was crucial in creating a seamless user experience. I used Django Templates extensively to separate logic from presentation and keep my code clean and reusable. The template inheritance system was incredibly useful, as it allowed me to define a base template and extend it in different parts of my site, ensuring consistency across pages.</p>
 
-        <p>{% lorem 9 b random %}</p>
+<p>For example, I created a base template with common elements like the header, footer, and navigation, and then extended it in other templates to add unique content to each page. Here's a small snippet of how I used Django Templates:</p>
 
+
+    <pre><code>
+    &#123<span class="red_code">&#37</span> <span class="green_code">extends</span> <span class="blue_code">'base.html'</span> <span class="red_code">&#37</span>&#125
+
+    &#123<span class="red_code">&#37</span> <span class="green_code">block</span> <span class="blue_code">content</span> <span class="red_code">&#37</span>&#125
+        My portfolio content goes here
+    &#123<span class="red_code">&#37</span> <span class="green_code">endblock</span> <span class="red_code">&#37</span>&#125
+    </code></pre>
+
+
+<p>This approach allowed me to keep my HTML organized and avoid repetition, which made it easier to maintain and update my website.</p>
+
+<p>Additionally, I got to grips with Django's powerful template language. Using template tags like <code>&#123<span class="red_code">&#37</span> <span class="green_code">if</span> <span class="red_code">&#37</span>&#125</code>, <code>&#123<span class="red_code">&#37</span> <span class="green_code">for</span> <span class="red_code">&#37</span>&#125</code>, and <code>&#123<span class="yellow_code">&#123</span> <span class="blue_code">variable</span> <span class="yellow_code">&#125</span>&#125</code> allowed me to dynamically render content based on the data I passed to the templates from my views.</p>
+
+<p>In conclusion, using Django in my first real project not only helped me develop my technical skills but also taught me how to structure and scale a web application effectively. Django's flexibility and built-in tools made it easier to focus on the core functionality of my portfolio while ensuring it was well-organized and maintainable.</p>
+        
     </div>
 </div>    
+
 
 {% endblock %}

@@ -28,6 +28,8 @@ function applyDarkMode(enabled) {
     document.documentElement.style.setProperty('--body-color', 'hsl(230, 75%, 15%)');
     document.documentElement.style.setProperty('--animation-color1', 'rgb(0, 0, 24)');
     document.documentElement.style.setProperty('--animation-color2', 'rgb(5, 1, 43)');
+    document.documentElement.style.setProperty('--bluecode-color', '#27d1c6');
+
 
     // Cambiar imágenes a dark mode
     document.querySelectorAll('.project_image_change').forEach(img => {
@@ -44,6 +46,7 @@ function applyDarkMode(enabled) {
     document.documentElement.style.setProperty('--header-color', 'hsla(228, 100%, 98%, 0.651)');
     document.documentElement.style.setProperty('--animation-color1', 'rgb(244, 247, 244)');
     document.documentElement.style.setProperty('--animation-color2', 'rgb(185, 248, 248)');
+    document.documentElement.style.setProperty('--bluecode-color', '#097a73');
 
     // Cambiar imágenes a light mode
     document.querySelectorAll('.project_image_change').forEach(img => {

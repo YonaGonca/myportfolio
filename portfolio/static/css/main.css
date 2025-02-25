@@ -16,6 +16,7 @@
     --border-color: hsl(230, 25%, 80%);
     --animation-color1: rgb(244, 247, 244);
     --animation-color2: rgb(185, 248, 248);
+    --bluecode-color: #097a73;
     transition: --title-color 0.3s ease, --body-color 0.3s ease;
   
     /*Font and typography*/

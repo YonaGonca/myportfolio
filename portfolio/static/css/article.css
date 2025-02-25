@@ -5,3 +5,47 @@
 #article_header h1{
     font-size: 35px;
 }
+
+#article_body{
+    margin-top: 30px;
+}
+
+#article_body p{
+    text-indent: 20px;
+    margin: 10px auto;
+    font-size: 18px;
+}
+
+#article_body h2{
+    margin-top: 30px;
+}
+
+pre{
+    background-color: var(--header-color);
+    border: 3px solid var(--text-color);
+    border-radius: 12px;
+    padding: 10px;
+    width: 400px;
+    margin: 0 auto;
+    
+}
+
+.red_code{
+    color: #dd171a;
+    font-weight: bold;
+}
+
+.green_code{
+    color: #639900;
+    font-weight: bold;
+}
+
+.blue_code{
+    color: var(--bluecode-color);
+    font-weight: bold;
+}
+
+.yellow_code{
+    color: #B58915;
+    font-weight: bold;
+}
