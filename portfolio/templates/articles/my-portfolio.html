@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load i18n %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'css/article.css' %}">
+<link rel="stylesheet" href="{% static 'css/article_portfolio.css' %}">
+{% endblock %}
+
+{% block title %}Yonathan Gonçalves | {% trans "Articles" %}{% endblock %}
+
+
+{% block content %}
+
+<div class="container" id="container_article">
+    <div id="article_header">
+        <h1>{{ project.title }}</h1>
+        <p class="date">{{ project.date }}</p>
+    </div>
+    <div id="article_body">
+
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam praesentium nihil maiores blanditiis ullam facere magni laudantium corporis, consectetur id illo autem quis ut fuga quo minus accusamus aspernatur tempora.</p>
+
+        <h2>Lorem</h2>
+
+        <p>{% lorem 9 b random %}</p>
+
+    </div>
+</div>    
+
+{% endblock %}

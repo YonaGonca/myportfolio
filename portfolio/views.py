@@ -1,9 +1,9 @@
-from django.shortcuts import render, redirect
-from django.utils.translation import gettext as _
+from django.shortcuts import render, redirect, get_object_or_404
 from django.utils import translation
 from django.shortcuts import redirect
 from django.core.mail import send_mail
 from .forms import ContactForm
+from .models import Project
 
 # Create your views here.
 def obtain_dark_mode(request):
@@ -50,10 +50,6 @@ def change_language(request, lang_code):
     request.session[translation.LANGUAGE_SESSION_KEY] = lang_code  
     return redirect(request.META.get('HTTP_REFERER', '/')) 
 
-from django.shortcuts import render
-from django.core.mail import send_mail
-from .forms import ContactForm
-
 def contact_view(request):
     if request.method == "POST":
         form = ContactForm(request.POST)
@@ -79,3 +75,8 @@ def contact_view(request):
 
     return redirect("/#contact")
 
+def article_project(request, slug):
+    project = get_object_or_404(Project, slug=slug)
+    template_name = f"articles/{project.template_name}.html"
+    
+    return render(request, template_name, {'project': project})
