@@ -33,20 +33,20 @@
             <div id="project_links">
                 <ul id="project_links_list">
                     <li>
-                        <a href="#" class="project_link">{% blocktrans %}Article{% endblocktrans %}</a>
+                        <a href="{% url 'article_project' 'my-portfolio' %}" class="project_link">{% blocktrans %}Article{% endblocktrans %}</a>
                     </li>
                     <li>
-                        <a href="#" class="project_link">{% blocktrans %}Source{% endblocktrans %} <i class="ri-external-link-line"></i></a>
+                        <a href="https://github.com/YonaGonca/myportfolio" target="_blank" class="project_link">{% blocktrans %}Source{% endblocktrans %} <i class="ri-external-link-line"></i></a>
                     </li>
                     <li>
-                        <a href="#" class="project_link">Demo <i class="ri-external-link-line"></i> </a>
+                        <a href="{% url 'index' %}" class="project_link">Demo <i class="ri-external-link-line"></i> </a>
                     </li>
                 </ul>
             </div>
         </div>
-        <div class="project" id="project_1">
+        <div class="project" id="project_2">
             <div id="project_title">
-                yonathangoncalves.com
+                Workout Tracker API
             </div>
             <div id="project_image">
                 <img class="project_image_change" 
@@ -55,25 +55,22 @@
                 data-dark="{% static 'assets/images/portfolio_dark.webp' %}" 
                 alt="Portfolio preview in light and dark mode">             </div>
             <div id="project_description">
-                {% blocktrans %}The source of this website.{% endblocktrans %}
+                {% blocktrans %}REST API to manage your workouts.{% endblocktrans %}
             </div>
             <div id="project_links">
                 <ul id="project_links_list">
                     <li>
-                        <a href="#" class="project_link">{% blocktrans %}Article{% endblocktrans %}</a>
+                        <a href="{% url 'article_project' 'workout-tracker-api' %}" class="project_link">{% blocktrans %}Article{% endblocktrans %}</a>
                     </li>
                     <li>
-                        <a href="#" class="project_link">{% blocktrans %}Source{% endblocktrans %} <i class="ri-external-link-line"></i></a>
-                    </li>
-                    <li>
-                        <a href="#" class="project_link">Demo <i class="ri-external-link-line"></i> </a>
+                        <a href="https://github.com/YonaGonca/Workout_Tracker_API" class="project_link" target="_blank">{% blocktrans %}Source{% endblocktrans %} <i class="ri-external-link-line"></i></a>
                     </li>
                 </ul>
             </div>
         </div>
-        <div class="project" id="project_1">
+        <div class="project" id="project_3">
             <div id="project_title">
-                yonathangoncalves.com
+                Task Tracker CLI
             </div>
             <div id="project_image">
                 <img class="project_image_change" 
@@ -82,25 +79,22 @@
                 data-dark="{% static 'assets/images/portfolio_dark.webp' %}" 
                 alt="Portfolio preview in light and dark mode">              </div>
             <div id="project_description">
-                {% blocktrans %}The source of this website.{% endblocktrans %}
+                {% blocktrans %}Simple CLI app for efficient task management.{% endblocktrans %}
             </div>
             <div id="project_links">
                 <ul id="project_links_list">
                     <li>
-                        <a href="#" class="project_link">{% blocktrans %}Article{% endblocktrans %}</a>
+                        <a href="{% url 'article_project' 'task-tracker-cli' %}" class="project_link">{% blocktrans %}Article{% endblocktrans %}</a>
                     </li>
                     <li>
-                        <a href="#" class="project_link">{% blocktrans %}Source{% endblocktrans %} <i class="ri-external-link-line"></i></a>
-                    </li>
-                    <li>
-                        <a href="#" class="project_link">Demo <i class="ri-external-link-line"></i> </a>
+                        <a href="https://github.com/YonaGonca/Task-Tracker-CLI" class="project_link" target="_blank">{% blocktrans %}Source{% endblocktrans %} <i class="ri-external-link-line"></i></a>
                     </li>
                 </ul>
             </div>
         </div>
         <div class="project" id="project_1">
             <div id="project_title">
-                yonathangoncalves.com
+                VIATEL SA - Automation Tool
             </div>
             <div id="project_image">
                 <img class="project_image_change" 
@@ -109,78 +103,19 @@
                 data-dark="{% static 'assets/images/portfolio_dark.webp' %}" 
                 alt="Portfolio preview in light and dark mode">              </div>
             <div id="project_description">
-                {% blocktrans %}The source of this website.{% endblocktrans %}
+                {% blocktrans %}Simple GUI to automate service requests at Viatel.{% endblocktrans %}
             </div>
             <div id="project_links">
                 <ul id="project_links_list">
                     <li>
-                        <a href="#" class="project_link">{% blocktrans %}Article{% endblocktrans %}</a>
+                        <a href="{% url 'article_project' 'viatel-automation-tool' %}" class="project_link" >{% blocktrans %}Article{% endblocktrans %}</a>
                     </li>
                     <li>
-                        <a href="#" class="project_link">{% blocktrans %}Source{% endblocktrans %} <i class="ri-external-link-line"></i></a>
-                    </li>
-                    <li>
-                        <a href="#" class="project_link">Demo <i class="ri-external-link-line"></i> </a>
+                        <a href="https://github.com/YonaGonca/Policiamentos-Viatel-Automation-Tool" class="project_link" target="_blank">{% blocktrans %}Source{% endblocktrans %} <i class="ri-external-link-line"></i></a>
                     </li>
                 </ul>
             </div>
         </div>
-        <div class="project" id="project_1">
-            <div id="project_title">
-                yonathangoncalves.com
-            </div>
-            <div id="project_image">
-                <img class="project_image_change" 
-                src="{% if dark_mode == 'enabled' %}{% static 'assets/images/portfolio_dark.webp' %}{% else %}{% static 'assets/images/portfolio.webp' %}{% endif %}" 
-                data-light="{% static 'assets/images/portfolio.webp' %}" 
-                data-dark="{% static 'assets/images/portfolio_dark.webp' %}" 
-                alt="Portfolio preview in light and dark mode">              </div>
-            <div id="project_description">
-                {% blocktrans %}The source of this website.{% endblocktrans %}
-            </div>
-            <div id="project_links">
-                <ul id="project_links_list">
-                    <li>
-                        <a href="#" class="project_link">{% blocktrans %}Article{% endblocktrans %}</a>
-                    </li>
-                    <li>
-                        <a href="#" class="project_link">{% blocktrans %}Source{% endblocktrans %} <i class="ri-external-link-line"></i></a>
-                    </li>
-                    <li>
-                        <a href="#" class="project_link">Demo <i class="ri-external-link-line"></i> </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <div class="project" id="project_1">
-            <div id="project_title">
-                yonathangoncalves.com
-            </div>
-            <div id="project_image">
-                <img class="project_image_change" 
-                src="{% if dark_mode == 'enabled' %}{% static 'assets/images/portfolio_dark.webp' %}{% else %}{% static 'assets/images/portfolio.webp' %}{% endif %}" 
-                data-light="{% static 'assets/images/portfolio.webp' %}" 
-                data-dark="{% static 'assets/images/portfolio_dark.webp' %}" 
-                alt="Portfolio preview in light and dark mode">              </div>
-            <div id="project_description">
-                {% blocktrans %}The source of this website.{% endblocktrans %}
-            </div>
-            <div id="project_links">
-                <ul id="project_links_list">
-                    <li>
-                        <a href="#" class="project_link">{% blocktrans %}Article{% endblocktrans %}</a>
-                    </li>
-                    <li>
-                        <a href="#" class="project_link">{% blocktrans %}Source{% endblocktrans %} <i class="ri-external-link-line"></i></a>
-                    </li>
-                    <li>
-                        <a href="#" class="project_link">Demo <i class="ri-external-link-line"></i> </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-
-
     </div>
 </div>
 </div>

@@ -19,7 +19,7 @@
 @media screen and (min-width: 1023px) {
     
     #projects{
-      grid-template-columns: auto auto;
+      grid-template-columns: 50% 50%;
     }
     
       }
