@@ -377,7 +377,6 @@ nav {
   border: 2px solid var(--text-color);
   border-radius: 12px;
   margin: 1rem;
-  background-color: var(--header-color);
 
 }
 
@@ -389,6 +388,8 @@ nav {
   font-size: var(--bigger-normal-font-size);
   border-radius: 12px 12px 0px 0px;
   cursor: pointer;
+  background-color: var(--header-color);
+
 }
 
 #project_title:hover{
@@ -399,14 +400,23 @@ nav {
 #project_image{
   border-top: 2px solid var(--text-color);
   border-bottom: 2px solid var(--text-color);
+  background-color: transparent !important;
 }
 
 #project_description{
   padding: .75rem 1rem;
+  background-color: var(--header-color);
+}
+
+#project_links{
+  background-color: var(--header-color);
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
 }
 
 #project_links_list{
   display: inline-block;
+
 }
 
 #project_links_list li{
