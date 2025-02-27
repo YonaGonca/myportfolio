@@ -173,8 +173,18 @@
                 </div>
                 <div class="skill">
                     <img src="{% static 'assets/icons/thunder.png' %}" alt="Thunder Client logo">   
-                    <h6>Thunder Client</h6>
+                    <h6>Thunder</h6>
                 </div>
+                <div class="skill">
+                    <img class="project_image_change" 
+                    src="{% if dark_mode == 'enabled' %}{% static 'assets/icons/swagger-dark.png' %}{% else %}{% static 'assets/icons/swagger.png' %}{% endif %}" 
+                    data-light="{% static 'assets/icons/swagger.png' %}" 
+                    data-dark="{% static 'assets/icons/swagger-dark.png' %}" 
+                    alt="Swagger logo">   
+                    <h6>Swagger</h6>
+                </div>
+            </div>
+
             </div>
         </div>
     </div>

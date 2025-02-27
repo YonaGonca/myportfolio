@@ -20,15 +20,17 @@
     margin-top: 30px;
 }
 
+/*Code Box*/
+
 pre{
     background-color: var(--header-color);
     border: 3px solid var(--text-color);
     border-radius: 12px;
-    padding: 10px;
-    width: 400px;
-    margin: 0 auto;
-    
+    padding: 25px 10px;
+    margin: 20px auto;
 }
+
+/*Color Code Classes*/
 
 .red_code{
     color: #dd171a;
@@ -48,4 +50,14 @@ pre{
 .yellow_code{
     color: #B58915;
     font-weight: bold;
+}
+
+/*Different Codes*/
+
+#code_model{
+    width: 560px;
+}
+
+#code_inheritance{
+    width: 400px;
 }

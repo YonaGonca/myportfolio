@@ -7,7 +7,7 @@ class Project(models.Model):
     date = models.DateTimeField(auto_now_add=True)
     template_name = models.CharField(
         max_length=100,
-        help_text="Nombre del archivo de template (sin .html)"
+        help_text="Template name (without .html)"
     )
 
     def save(self, *args, **kwargs):

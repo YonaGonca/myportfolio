@@ -21,28 +21,48 @@
         <p>For this project, I used several key technologies. Django served as the foundation, allowing me to build a structured and maintainable web application. I used Django Templates for creating pages and its template inheritance system to streamline HTML code management.</p>
         <p>In the following sections, I’ll highlight the key takeaways from this project, what I learned during development, and how I utilized different technologies and best practices to improve accessibility and optimize the site.</p>
     
-        <h2>Learning Django</h2>
     <p>For me, this portfolio project was my first real project with Django. Although I had experimented with the framework before, this was the first time I applied it to a full-scale, production-like project. Django helped me build a well-structured, scalable, and maintainable web application that I could be proud of.</p>
 
-<p>One of the first things I learned was the importance of Django's built-in features, such as the admin panel, models, and views. I was able to manage content for my portfolio easily through the Django admin, which saved me a lot of time. The use of models for structuring my data allowed me to store and retrieve information about my projects and blog posts with ease.</p>
+    <p>One of the first things I learned was the importance of Django's built-in features, such as the admin panel, models, and views. Using models allowed me to structure the data for each of my projects and blog posts efficiently. The slug field, in particular, made managing URLs incredibly simple. By generating a unique slug for each article, I was able to create clean and SEO-friendly URLs for each project. The Django admin panel made it easy to manage and update content, saving me a lot of time and effort. With these tools, I could easily store, retrieve, and display information about my projects and blog posts. Here's the code for the model that helped me achieve this:</p>
 
-<p>In this project, I also learned how to organize and structure my Django application efficiently. The concept of views, URL routing, and templates was crucial in creating a seamless user experience. I used Django Templates extensively to separate logic from presentation and keep my code clean and reusable. The template inheritance system was incredibly useful, as it allowed me to define a base template and extend it in different parts of my site, ensuring consistency across pages.</p>
+<pre id="code_model"><code>    <span class="yellow_code">class </span><span class="blue_code">Project</span><span class="red_code">(</span>models.Model<span class="red_code">)</span>: 
+        title <span class="red_code">=</span> models.CharField<span class="red_code">(</span>max_length<span class="red_code">=</span>200<span class="red_code">)</span> 
+        slug <span class="red_code">=</span> models.SlugField<span class="red_code">(</span>unique<span class="red_code">=</span>True, blank<span class="red_code">=</span>True<span class="red_code">)</span> 
+        date <span class="red_code">=</span> models.DateTimeField<span class="red_code">(</span>auto_now_add<span class="red_code">=</span>True<span class="red_code">)</span> 
+        template_name <span class="red_code">=</span> models.CharField<span class="red_code">(</span> 
+            max_length<span class="red_code">=</span>100, 
+            help_text<span class="red_code">=</span><span class="green_code">"Template name (without .html)"</span>
+        <span class="red_code">)</span> 
+</code></pre>
+
+<p>This Django model, <code><span class="blue_code">Project</span></code>, defines the structure for storing project-related data.  
+    The <code><strong>title</strong></code> field holds the project name, while <code><strong>slug</strong></code> generates a unique identifier for clean URLs.  
+    The <code><strong>date</strong></code> field automatically records when a project is created,  
+    and <code><strong>template_name</strong></code> specifies the associated template without the <code><span class="green_code">".html"</span></code> extension.  
+    This model helps efficiently manage projects within a Django application.  </p>
+
+    <p>In this project, I also learned how to organize and structure my Django application efficiently. The concept of views, URL routing, and templates was crucial in creating a seamless user experience. I used Django Templates extensively to separate logic from presentation and keep my code clean and reusable. The template inheritance system was incredibly useful, as it allowed me to define a base template and extend it in different parts of my site, ensuring consistency across pages.</p>
 
 <p>For example, I created a base template with common elements like the header, footer, and navigation, and then extended it in other templates to add unique content to each page. Here's a small snippet of how I used Django Templates:</p>
 
 
-    <pre><code>
-    &#123<span class="red_code">&#37</span> <span class="green_code">extends</span> <span class="blue_code">'base.html'</span> <span class="red_code">&#37</span>&#125
+<pre id="code_inheritance"><code>    &#123<span class="red_code">&#37</span> <span class="green_code">extends</span> <span class="blue_code">'base.html'</span> <span class="red_code">&#37</span>&#125
 
     &#123<span class="red_code">&#37</span> <span class="green_code">block</span> <span class="blue_code">content</span> <span class="red_code">&#37</span>&#125
         My portfolio content goes here
     &#123<span class="red_code">&#37</span> <span class="green_code">endblock</span> <span class="red_code">&#37</span>&#125
-    </code></pre>
+</code></pre>
 
 
 <p>This approach allowed me to keep my HTML organized and avoid repetition, which made it easier to maintain and update my website.</p>
 
 <p>Additionally, I got to grips with Django's powerful template language. Using template tags like <code>&#123<span class="red_code">&#37</span> <span class="green_code">if</span> <span class="red_code">&#37</span>&#125</code>, <code>&#123<span class="red_code">&#37</span> <span class="green_code">for</span> <span class="red_code">&#37</span>&#125</code>, and <code>&#123<span class="yellow_code">&#123</span> <span class="blue_code">variable</span> <span class="yellow_code">&#125</span>&#125</code> allowed me to dynamically render content based on the data I passed to the templates from my views.</p>
+
+<p>I integrated email functionality into my project using Django’s built-in email backend. By configuring the settings to work with Gmail’s SMTP server, I was able to easily send emails from my application. This feature allowed me to handle notifications and communication directly within the site, providing a more seamless experience for users.</p>
+
+<p>Additionally, I implemented internationalization by translating the content of my site into four languages. Using Django's translation tools, I was able to offer a multilingual experience, making the site accessible to a wider audience.</p>
+
+<p>Throughout this project, my skills in CSS, HTML, and JavaScript significantly improved. I had never built such a large and visually demanding website before, so it pushed me to dive deeper into front-end technologies. As I worked on designing and implementing complex layouts and interactive elements, I became more confident in creating responsive, dynamic user interfaces that were both functional and visually appealing.</p>
 
 <p>In conclusion, using Django in my first real project not only helped me develop my technical skills but also taught me how to structure and scale a web application effectively. Django's flexibility and built-in tools made it easier to focus on the core functionality of my portfolio while ensuring it was well-organized and maintainable.</p>
         
