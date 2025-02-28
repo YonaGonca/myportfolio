@@ -116,7 +116,34 @@
                 </ul>
             </div>
         </div>
+        <div class="project" id="project_1">
+            <div id="project_title">
+                Memory Game
+            </div>
+            <div id="project_image">
+                <img class="project_image_change" 
+                src="{% if dark_mode == 'enabled' %}{% static 'assets/images/viatel_dark.webp' %}{% else %}{% static 'assets/images/viatel.webp' %}{% endif %}" 
+                data-light="{% static 'assets/images/viatel.webp' %}" 
+                data-dark="{% static 'assets/images/viatel_dark.webp' %}" 
+                alt="Portfolio preview in light and dark mode">              </div>
+            <div id="project_description">
+                {% blocktrans %}Fun and interactive memory game{% endblocktrans %}
+            </div>
+            <div id="project_links">
+                <ul id="project_links_list">
+                    <li>
+                        <a href="{% url 'article_project' 'viatel-automation-tool' %}" class="project_link" >{% blocktrans %}Article{% endblocktrans %}</a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/YonaGonca/Policiamentos-Viatel-Automation-Tool" class="project_link" target="_blank">{% blocktrans %}Source{% endblocktrans %} <i class="ri-external-link-line"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </div>
+
+    
+</div>
 </div>
 </div>
 {% endblock %}
