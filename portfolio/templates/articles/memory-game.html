@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load i18n %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'css/article.css' %}">
+{% endblock %}
+
+{% block title %}Yonathan Gonçalves | {% trans "Articles" %}{% endblock %}
+
+
+{% block content %}
+
+<div class="container" id="container_article">
+    <div id="article_header">
+        <h1>{{ project.title }}</h1>
+        <p class="date">{{ project.date }}</p>
+    </div>
+    <div id="article_body">
+    </div>
+</div>    
+
+
+{% endblock %}

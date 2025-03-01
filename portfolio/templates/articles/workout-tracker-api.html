@@ -17,7 +17,99 @@
         <p class="date">{{ project.date }}</p>
     </div>
     <div id="article_body">
-       
+        <p>This is my first project using Django Rest Framework (DRF). It is a REST API for managing workout routines, featuring JWT-based authentication, CSV/PDF report generation, and Swagger documentation. In this article, I want to share the technologies I used, what I learned during the process, and some key code snippets.</p>
+
+        <h2>JWT Authentication</h2>
+
+        <p>One of the most important aspects of this API was implementing authentication with JWT. I learned how to handle access and refresh tokens, as well as how to protect endpoints for authenticated users.</p>
+    
+        <p>Here is the configuration in <strong>settings.py</strong> for Simple JWT:</p>
+
+<pre id="code_auth"><code><span class="blue_code">INSTALLED_APPS</span> <span class="blue_code">=</span> &#123
+    'rest_framework',
+    'rest_framework_simplejwt',
+&#125
+
+<span class="blue_code">REST_FRAMEWORK</span> = &#123
+    <strong>'DEFAULT_AUTHENTICATION_CLASSES'</strong>: (
+        'rest_framework_simplejwt.authentication.JWTAuthentication',
+    &#125
+&#125
+</code></pre>
+        
+
+        <p>To obtain an access token, users can make a <strong>POST</strong> request:</p>
+
+<pre id="code_request"><code><span class="green_code">curl</span> <span class="blue_code">-X POST</span> <span class="blue_code">http://localhost:8000/api/token/</span>
+
+    <span class="green_code">-H</span> <span class="blue_code">"Content-Type: application/json"</span>
+        
+    <span class="green_code">-d</span> <span class="blue_code">'{ "username": "user", "password": "pass" }'</span>
+</code></pre>
+        
+        
+
+        <p>This returns the access and refresh tokens. And then you can use the tokens for protected endpoints.</p>
+
+        <p>Implementing JWT helped me understand how token-based authentication works and the importance of securing endpoints in an API. In the future, I will be able to apply this knowledge to projects with users and access levels.</p>    
+    
+        <h2>CRUD for Exercises and Workouts</h2>
+
+        <p>I used ViewSets and Serializers to simplify resource management. Here is an example of the exercise model:</p>
+
+        <pre><code>    <span class="green_code">class</span> <span class="blue_code">Exercise</span>(<span class="blue_code">models.Model</span>):
+            <span class="green_code">name</span> = <span class="blue_code">models.CharField</span>(<span class="blue_code">max_length=100</span>)
+            <span class="green_code">description</span> = <span class="blue_code">models.TextField</span>()
+            <span class="green_code">muscle_group</span> = <span class="blue_code">models.CharField</span>(<span class="blue_code">max_length=100</span>)
+    
+        <span class="green_code">def</span> <span class="blue_code">__str__</span>(<span class="green_code">self</span>):
+            <span class="green_code">return</span> <span class="blue_code">self.name</span>
+    </code></pre>
+    
+
+        <p>The corresponding serializer:</p>
+
+        <pre><code>    <span class="green_code">class</span> <span class="blue_code">ExerciseSerializer</span>(<span class="blue_code">serializers.ModelSerializer</span>):
+            <span class="green_code">class</span> <span class="blue_code">Meta</span>:
+                <span class="green_code">model</span> = <span class="blue_code">Exercise</span>
+                <span class="green_code">fields</span> = <span class="blue_code">'__all__'</span>
+    </code></pre>
+    
+
+        <p>And the ViewSet to handle the CRUD operations:</p>
+
+        <pre><code>    <span class="green_code">class</span> <span class="blue_code">ExerciseViewSet</span>(<span class="blue_code">viewsets.ModelViewSet</span>):
+            <span class="green_code">queryset</span> = <span class="blue_code">Exercise.objects.all()</span>
+            <span class="green_code">serializer_class</span> = <span class="blue_code">ExerciseSerializer</span>
+            <span class="green_code">permission_classes</span> = <span class="blue_code">[IsAuthenticated]</span>
+    </code></pre>
+    
+        
+        <p>With this, I learned how to structure an API efficiently, reducing repetitive code and maintaining a clean design. In future projects, I will be able to create APIs more quickly by following this approach.</p>
+    
+        <h2>Automatic Documentation with Swagger</h2>
+
+        <p>To document the API professionally, I used <strong>drf-spectacular</strong>. This generates a visual interface where users can test the endpoints without the need for external tools.</p>
+
+        <p>Configuration in <strong>settings.py:</strong></p>
+    
+        <pre><code>     <span class="green_code">INSTALLED_APPS</span> = [
+            <span class="blue_code">'drf_spectacular'</span>,
+        ]
+    
+        <span class="green_code">REST_FRAMEWORK</span> = {
+            <span class="green_code">'DEFAULT_SCHEMA_CLASS'</span>: <span class="blue_code">'drf_spectacular.openapi.AutoSchema'</span>,
+        }
+    </code></pre>
+    
+
+        <p>I learned the importance of documenting an API to make it easier for other developers to use. In the future, I will always include clear documentation in my projects to improve their maintainability.</p>
+
+        <p>This project has been an invaluable experience that has allowed me to deepen and solidify my knowledge in backend development, particularly in Django Rest Framework. Through the implementation of JWT authentication, the creation of efficient APIs with ViewSets and Serializers, PDF report generation, and automatic documentation with Swagger, I was able to apply and understand key concepts for building robust and scalable applications.</p>
+
+        <p>Additionally, during the development process, I learned other important skills that complement my knowledge in backend development. For example, I learned how to populate a database with data in JSON format, which was very useful for quickly and effectively loading initial data into my application. I also learned how to implement the JWT authentication system in key functionalities such as login, register, and logout, which allowed me to securely and efficiently protect the endpoints.</p>
+
+        <p>This project not only allowed me to learn how to work with technologies like JWT and Swagger, but also provided me with the necessary tools to develop complete and professional APIs, which are essential in more complex projects. Thanks to this project, I feel much more prepared to face future challenges in backend development and provide secure and well-structured solutions.</p>
     </div>
 </div>    
 
