@@ -26,8 +26,9 @@ pre{
     background-color: var(--header-color);
     border: 3px solid var(--text-color);
     border-radius: 12px;
-    padding: 25px;
-    margin: 20px auto;
+    padding: 25px 35px;
+    margin: 25px auto;
+    font-weight: 600;
 }
 
 /*Color Code Classes*/
@@ -42,6 +43,11 @@ pre{
     font-weight: bold;
 }
 
+.orange_code{
+    color: #CB4B16;
+    font-weight: bold;
+}
+
 .blue_code{
     color: var(--bluecode-color);
     font-weight: bold;
@@ -49,6 +55,11 @@ pre{
 
 .yellow_code{
     color: #B58915;
+    font-weight: bold;
+}
+
+.pink_code{
+    color: #D33682;
     font-weight: bold;
 }
 
@@ -63,9 +74,49 @@ pre{
 }
 
 #code_auth{
-    width: 650px;
+    width: 670px;
 }
 
 #code_request{
-    width: 510px;
+    width: 530px;
+}
+
+#code_crud_model{
+    width: 525px;
+}
+
+#code_crud_serializer{
+    width: 550px;
+}
+
+#code_crud_viewset{
+    width: 470px;
+}
+
+#code_swagger{
+    width: 650px;
+}
+
+#code_json{
+    width: 600px;
+}
+
+#code_main{
+    width: 340px;
+}
+
+#code_tkinter{
+    width: 430px;
+}
+
+#code_save_to_csv{
+    width: 810px;
+}
+
+#code_send_email{
+    width: 910px;
+}
+
+#code_calendar{
+    width: 650px;
 }

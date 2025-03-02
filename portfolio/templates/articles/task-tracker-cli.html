@@ -17,6 +17,29 @@
         <p class="date">{{ project.date }}</p>
     </div>
     <div id="article_body">
+
+        <p>This project allowed me to strengthen my skills in building command-line interface <strong>(CLI)</strong> applications with Python. One of the key aspects was using <strong>argparse</strong> to efficiently manage multiple commands, which helped me better understand how to structure a user interface in the terminal.</p>
+
+        <p>Additionally, I learned how to handle <strong>JSON</strong> files as a lightweight alternative to databases, implementing functions to read, write, and update data securely. This made me reflect on the importance of data persistence in applications without relying on more complex systems like <strong>SQL</strong> or <strong>NoSQL</strong> databases.</p>
+
+        <p>A crucial part of the project was the function that ensures the <strong>JSON</strong> file exists before performing any operations. This guarantees that the application always has a storage space for tasks without requiring manual intervention:</p>
+
+<pre id="code_json"><code><span class="green_code">def</span> <span class="orange_code">ensure_json_file_exists</span>():
+    <span class="green_code">if</span> <span class="green_code">not</span> <span class="orange_code">os.path.exists</span>(<span class="blue_code">JSON_FILE</span>):
+        <span class="green_code">with</span> <span class="orange_code">open</span>(<span class="blue_code">JSON_FILE</span>, <span class="blue_code">"w"</span>) <span class="green_code">as</span> file:
+            <span class="orange_code">json.dump</span>({<span class="blue_code">"tasks"</span>: []}, file, indent=<span class="pink_code">4</span>)
+        <span class="orange_code">print</span>(f<span class="blue_code">"'</span>{JSON_FILE}<span class="blue_code">' File created automatically."</span>)</code></pre>
+
+        <p>Another important aspect was understanding the meaning of <strong>if __name__ == "__main__":</strong>. Before this project, I wasn’t entirely clear on its purpose in Python. I learned that this conditional ensures that the code inside it only runs when the file is executed directly, and not when it is imported as a module in another script. This is essential for organizing code in a modular and reusable way.</p>
+
+<pre id="code_main"><code><span class="green_code">if</span> __name__ <span class="green_code">==</span> <span class="blue_code">"__main__"</span>:
+    <span class="orange_code">ensure_json_file_exists</span>()
+    <span class="orange_code">main</span>()</code></pre>
+    
+
+        <p>Here, <strong>ensure_json_file_exists()</strong> runs at the start to ensure the <strong>JSON</strong> file is available, and then <strong>main()</strong> handles the commands entered in the terminal. I learned that this structure is a best practice in Python, as it allows distinguishing between running a script as a standalone program or using it as a module in other projects.</p>
+
+        <p>Overall, this project helped me gain a deeper understanding of key concepts such as <strong>dunder</strong> (double underscore) methods, the importance of modularity, and how to structure Python applications in a more professional manner. These insights will be very useful in future projects, both in developing <strong>CLI</strong> tools and more advanced applications.</p>
        
     </div>
 </div>    

@@ -17,8 +17,55 @@
         <p class="date">{{ project.date }}</p>
     </div>
     <div id="article_body">
+
+        <p>This project allowed me to improve my skills in Python, particularly in developing graphical user interfaces <strong>(GUIs)</strong> and automating tasks. By creating the <strong>Policiamentos - Viatel Automation Tool</strong>, I was able to optimize the process of submitting service requests to the police and logging the details of these requests efficiently. The tool not only automates the creation of emails for service requests but also ensures that all relevant information is saved in a <strong>CSV</strong> file for future reference. This experience allowed me to better understand the power of Python libraries like <strong>tkinter</strong>, <strong>tkcalendar</strong>, and <strong>webbrowser</strong> for automating repetitive tasks in the workplace.</p>
        
-    </div>
+        <p>One of the main lessons from this project was using a graphical user interface <strong>(GUI)</strong> to facilitate data entry. The <strong>GUI</strong>, built with <strong>tkinter</strong>, allows users to easily input details like region, police division, date, time, and street of the request. This simple yet effective interface significantly reduces manual entry errors and the time required to generate the service request emails. Below is how the main window of the application is configured:</p>
+    
+<pre id="code_tkinter"><code>root = tk.Tk()
+root.title(<span class="blue_code">"Policiamentos - Viatel"</span>)
+root.geometry(<span class="blue_code">"450x400"</span>)
+root.configure(bg=<span class="blue_code">"#008AC8"</span>)
+root.iconbitmap(<span class="blue_code">"media/viatel_logo.ico"</span>)</code></pre>
+
+        <p>The <strong>save_to_csv()</strong> function plays a key role in storing the request details in a <strong>CSV</strong> file. Every time a user enters information and generates an email, this function saves the region, division, date, time, and street in a file called <strong>policiamentos.csv</strong>. This data persistence allows for an organized record of all submitted requests without the need for a more complex database. Here is the implementation of this function:</p>
+
+<pre id="code_save_to_csv"><code><span class="green_code">def</span> <span class="orange_code">save_to_csv</span>(region, division, date, time, street):
+    file_name <span class="green_code">=</span> <span class="blue_code">"policiamentos.csv"</span>
+    <span class="green_code">with</span> <span class="orange_code">open</span>(file_name, mode=<span class="blue_code">'a'</span>, newline=<span class="blue_code">''</span>, encoding=<span class="blue_code">'utf-8'</span>) <span class="green_code">as</span> file:
+        writer <span class="green_code">=</span> csv.writer(file)
+        writer.writerow([region, division, date.strftime(<span class="blue_code">'%d/%m/%Y'</span>), time, street])</code></pre>
+
+        <p>An especially interesting part of this project was learning how to interact with Outlook Web to send pre-filled emails. The tool dynamically builds the email body using the data entered in the form and then automatically opens the default email client to send the request to the appropriate police division. This aspect was implemented using Python's <strong>webbrowser</strong> module, which helped me understand the flexibility of web-based email protocols to automate communication tasks. The <strong>send_email()</strong> function is responsible for this process. It retrieves the data from the form, constructs the subject and body of the email, and then automatically opens the mail client with the pre-filled request, allowing the user to simply click "send." Here’s the function’s code:</p>
+    
+<pre id="code_send_email"><code><span class="green_code">def</span> <span class="orange_code">send_email</span>():
+    region <span class="green_code">=</span> region_var.get()
+    date <span class="green_code">=</span> date_entry.get_date()
+    street <span class="green_code">=</span> street_entry.get()
+    division <span class="green_code">=</span> division_var.get()
+    time <span class="green_code">=</span> time_var.get()
+            
+    subject <span class="green_code">=</span> f<span class="blue_code">"Pedido Serviço Remunerado - {street} - {division} - {date.strftime('%d/%m/%Y')}"</span>
+    body <span class="green_code">=</span> f<span class="blue_code">"""..."""</span>
+            
+    recipient <span class="green_code">=</span> f<span class="blue_code">"{region.lower()}@{division[:3].lower()}fakeemail.com"</span>
+            
+    mailto_link <span class="green_code">=</span> f<span class="blue_code">"mailto:{recipient}?subject={urllib.parse.quote(subject)}}"</span>
+    webbrowser.open(mailto_link)
+            
+    <span class="orange_code">save_to_csv</span>(region, division, date, time, street)</code></pre>
+    
+    <p>Additionally, integrating a date picker using the <strong>tkcalendar</strong> module was a feature I found particularly useful. It allowed users to select the date intuitively, preventing errors in manually entering the date. The use of calendar widgets like this can significantly enhance the user experience in applications that require precise date selection. Features like these are crucial for applications of this type, as they minimize the possibility of human errors, which in turn reduces the time needed to fix those mistakes. Here's how the date picker is implemented:</p>
+    
+<pre id="code_calendar"><code>date_entry <span class="green_code">=</span> DateEntry(frame, width=<span class="pink_code">30</span>, date_pattern<span class="green_code">=</span><span class="blue_code">"dd/mm/yyyy"</span>)
+date_entry.grid(row<span class="green_code">=</span><span class="pink_code">1</span>, column<span class="green_code">=</span><span class="pink_code">1</span>, pady<span class="green_code">=</span><span class="pink_code">5</span>)</code></pre>
+    
+    <p>Regarding data persistence, the <strong>save_to_csv()</strong> function is highly useful for logging all the request details. Every time a user generates an email, the function saves the request in the <strong>CSV</strong> file, ensuring that all information is stored in an organized and accessible way. This not only improves internal organization but also makes it easier to access historical data for future analysis or reference.</p>
+
+    <p>One of the greatest lessons from this project was the importance of automating repetitive tasks, such as email creation and data logging. Through this project, I learned how to interact with web services, such as email, directly from Python, streamlining internal processes. I also realized how to use a simple graphical interface to make applications more accessible to users. Another important takeaway was the use of Python to manage data persistence without relying on more complex databases. Using a <strong>CSV</strong> file to store records turned out to be an effective solution for a project like this, allowing for efficient data storage and easy access.</p>
+
+    <p>Finally, integrating tools like <strong>tkcalendar</strong> for date selection and <strong>webbrowser</strong> for interacting with Outlook Web allowed me to enhance my skills in automating everyday processes in professional environments. This project not only reinforced my understanding of Python's capabilities for task automation, but also improved my ability to design practical solutions that facilitate management and communication within a company. The lessons learned here will be essential for future projects, both in task automation and in developing more complex applications.</p>
+</div>
 </div>    
 
 
