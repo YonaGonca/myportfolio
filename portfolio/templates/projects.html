@@ -18,9 +18,11 @@
     </div>
     <div id="projects">
         <div class="project" id="project_1">
-            <div id="project_title">
-                <a href="{% url 'article_project' 'my-portfolio' %}">yonathangoncalves.com</a>
-            </div>
+            <a href="{% url 'article_project' 'my-portfolio' %}">
+                <div id="project_title">
+                    yonathangoncalves.com
+                </div>
+            </a>
             <div id="project_image">
                 <img class="project_image_change" 
                 src="{% if dark_mode == 'enabled' %}{% static 'assets/images/portfolio_dark.webp' %}{% else %}{% static 'assets/images/portfolio.webp' %}{% endif %}" 
@@ -45,9 +47,11 @@
             </div>
         </div>
         <div class="project" id="project_2">
-            <div id="project_title">
-                <a href="{% url 'article_project' 'workout-tracker-api' %}">Workout Tracker API</a>
-            </div>
+            <a href="{% url 'article_project' 'workout-tracker-api' %}">
+                <div id="project_title">
+                    Workout Tracker API
+                </div>
+            </a>
             <div id="project_image">
                 <img class="project_image_change" 
                 src="{% if dark_mode == 'enabled' %}{% static 'assets/images/workout_api_dark.webp' %}{% else %}{% static 'assets/images/workout_api.webp' %}{% endif %}" 
@@ -69,9 +73,11 @@
             </div>
         </div>
         <div class="project" id="project_3">
-            <div id="project_title">
-                <a href="{% url 'article_project' 'task-tracker-cli' %}">Task Tracker CLI</a>
-            </div>
+            <a href="{% url 'article_project' 'task-tracker-cli' %}">
+                <div id="project_title">
+                    Task Tracker CLI
+                </div>
+            </a>
             <div id="project_image">
                 <img class="project_image_change" 
                 src="{% if dark_mode == 'enabled' %}{% static 'assets/images/task_tracker_cli_dark.webp' %}{% else %}{% static 'assets/images/task_tracker_cli.webp' %}{% endif %}" 
@@ -93,9 +99,11 @@
             </div>
         </div>
         <div class="project" id="project_1">
-            <div id="project_title">
-                <a href="{% url 'article_project' 'viatel-automation-tool' %}">VIATEL SA - Automation Tool</a>
-            </div>
+            <a href="{% url 'article_project' 'viatel-automation-tool' %}">
+                <div id="project_title">
+                    VIATEL SA - Automation Tool
+                </div>
+            </a>
             <div id="project_image">
                 <img class="project_image_change" 
                 src="{% if dark_mode == 'enabled' %}{% static 'assets/images/viatel_dark.webp' %}{% else %}{% static 'assets/images/viatel.webp' %}{% endif %}" 
@@ -117,9 +125,11 @@
             </div>
         </div>
         <div class="project" id="project_1">
-            <div id="project_title">
-                Memory Game
-            </div>
+            <a href="{% url 'article_project' 'memory-game' %}">
+                <div id="project_title">
+                    Memory Game
+                </div>
+            </a>
             <div id="project_image">
                 <img class="project_image_change" 
                 src="{% if dark_mode == 'enabled' %}{% static 'assets/images/memory_game.webp' %}{% else %}{% static 'assets/images/memory_game.webp' %}{% endif %}" 
@@ -135,7 +145,7 @@
                         <a href="{% url 'article_project' 'memory-game' %}" class="project_link" >{% blocktrans %}Article{% endblocktrans %}</a>
                     </li>
                     <li>
-                        <a href="#" class="project_link" target="_blank">{% blocktrans %}Source{% endblocktrans %} <i class="ri-external-link-line"></i></a>
+                        <a href="https://github.com/YonaGonca/memory-game" class="project_link" target="_blank">{% blocktrans %}Source{% endblocktrans %} <i class="ri-external-link-line"></i></a>
                     </li>
                 </ul>
             </div>

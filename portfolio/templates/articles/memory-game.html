@@ -17,7 +17,125 @@
         <p class="date">{{ project.date }}</p>
     </div>
     <div id="article_body">
-    </div>
+        
+        <p>The memory game I developed using HTML, CSS, and JavaScript is an interactive experience where players must find matching card pairs on a board. To achieve smooth and engaging gameplay, I implemented logic that manages player interactions, scoring, and game completion. Additionally, to provide a personalized and secure experience, I added an authentication system that allows players to register an account, log in, and access their statistics.</p>
+
+        <h2>Game Logic</h2>
+
+        <p>The core logic of the memory game is based on the player's interaction with the cards. When a player clicks on a card, the game flips it and compares its value with previously flipped cards. To manage this interaction, I used JavaScript events that allow changing the appearance of the cards, displaying their images, and handling animations. Here is the key snippet that shows how cards are handled when flipped:</p>
+
+<pre id="code_logic1"><code><span class="orange_code">if</span> (flippedCards <span class="green_code" >=</span><span class="green_code" >=</span> <span class="pink_code">1</span>) {
+    card1 <span class="green_code" >=</span> document.getElementById(<span class="blue_code">"card"</span> <span class="green_code">+</span> cardNumber);
+    card1.classList.add(<span class="blue_code">"imageCard"</span> <span class="green_code">+</span> numbers[cardNumber <span class="green_code">-</span> <span class="pink_code">1</span>]);
+    card1.classList.add(<span class="blue_code">"animation"</span>);
+    firstResult <span class="green_code" >=</span> numbers[cardNumber <span class="green_code">-</span> <span class="pink_code">1</span>];
+    firstNumber <span class="green_code" >=</span> cardNumber;
+    audioFlip.cloneNode().play();
+} <span class="orange_code">else if</span> (flippedCards <span class="green_code" >=</span><span class="green_code" >=</span> <span class="pink_code">2</span>) {
+    card2 <span class="green_code" >=</span> document.getElementById(<span class="blue_code">"card"</span> <span class="green_code">+</span> cardNumber);
+    card2.classList.add(<span class="blue_code">"imageCard"</span> + numbers[cardNumber - <span class="pink_code">1</span>]);
+    card2.classList.add(<span class="blue_code">"animation"</span>);
+    secondResult <span class="green_code" >=</span> numbers[cardNumber - <span class="pink_code">1</span>];
+    secondNumber <span class="green_code" >=</span> cardNumber;
+    audioFlip.cloneNode().play();
+    <span class="orange_code">if</span> (firstResult <span class="green_code" >=</span><span class="green_code" >=</span> secondResult) {
+        <span class="blue_code">// Logic when the cards match</span>
+    } <span class="orange_code">else</span> {
+        <span class="blue_code">// Logic when the cards do not match</span>
+    }
+}</code></pre>
+
+    <p>This code manages the action of flipping the cards and comparing their values. When the first card is flipped, its value is stored, and when the second card is flipped, the game checks if both cards match. If they do, the player earns a point, and the cards are visually disabled. If they do not match, the cards are flipped back. This snippet demonstrates how to handle dynamic events with JavaScript to make the game interactive and visually appealing.</p>
+    
+    <p>The following snippet is key to handling the scoring logic:</p>
+
+<pre id="code_logic2" ><code><span class="orange_code">if</span> (firstResult <span class="green_code" >=</span><span class="green_code" >=</span> secondResult) {
+    <span class="orange_code">if</span> (gameSettings.numberOfPlayers <span class="green_code" >=</span><span class="green_code" >=</span> <span class="pink_code">1</span>) {
+        pointsEarned1<span class="green_code">++</span>;
+        document.getElementsByClassName(<span class="blue_code">"selected"</span>)[<span class="pink_code">0</span>].innerHTML <span class="green_code" >=</span> pointsEarned1;
+    } <span class="orange_code">else</span> {
+        <span class="orange_code">if</span> (document.getElementById(<span class="blue_code">"currentPlayerName"</span>).innerHTML <span class="green_code" >=</span><span class="green_code" >=</span> gameSettings.playerName1) {
+            pointsEarned1<span class="green_code">++</span>;
+            document.getElementsByClassName(<span class="blue_code">"selected"</span>)[<span class="pink_code">0</span>].innerHTML <span class="green_code" >=</span> pointsEarned1;
+        }
+        <span class="blue_code">// Similar logic for other players</span>
+    }
+}</code></pre>
+
+<p>In this case, the code checks if the cards match, and if they do, the corresponding player's score is increased. The logic adapts to both single-player and multiplayer modes, dynamically managing the score based on the number of players. This part of the code was particularly useful for learning how to handle multiple states and players within the same game, which is crucial for providing a personalized experience.</p>
+
+<p>When all card pairs are matched, the game comes to an end. To manage this process, I implemented a system that disables interaction buttons and displays a message with the final statistics. This code snippet shows how the game stops when the remaining points counter reaches zero:</p>
+
+<pre id="code_logic3"><code><span class="orange_code">if</span> (remainingPoints <span class="green_code" >=</span><span class="green_code" >=</span> <span class="pink_code">0</span>) {
+    document.getElementById(<span class="blue_code">"endGameButton"</span>).disabled <span class="green_code" >=</span> <span class="pink_code">true</span>;
+    document.getElementById(<span class="blue_code">"flip"</span>).disabled <span class="green_code" >=</span> <span class="pink_code">true</span>;
+    <span class="orange_code">if</span> (gameSettings.numberOfPlayers <span class="green_code" >=</span><span class="green_code" >=</span> <span class="pink_code">1</span>) {
+        addStatistics();
+        addRankings();
+        saveStatisticsRankings();
+    }
+    setTimeout(() <span class="green_code" >=></span> {
+        audioWin.play();
+        showRankingPopUp();
+    }, <span class="pink_code">200</span>);
+    clearInterval(intervalIdentifier);
+}</code></pre>
+
+<p>This snippet ensures that once the game is over, the player can no longer interact with the board, and their score is recorded in a ranking. Additionally, by enabling the results popup, the player receives immediate feedback on their performance. I learned how to manage user interaction in an organized manner and provide a smooth experience by implementing this type of automatic game-ending mechanism.</p>
+
+<h2>Authentication</h2>
+
+<p>The game also includes an authentication system that allows players to create accounts, log in, and access their statistics. This functionality is essential for providing a personalized experience, where players can view their achievements and rankings. In the login form, it is checked that the email and password match those previously registered. This is the most relevant snippet for the login authentication:</p>
+
+<pre id="code_auth1" ><code>loginForm.addEventListener(<span class="blue_code">'submit'</span>, (loginFunction) <span class="green_code">=></span> {
+    loginFunction.preventDefault();
+    <span class="orange_code">const</span> emailLogin <span class="green_code" >=</span> loginForm.elements.email.value;
+    <span class="orange_code">const</span> passwordLogin <span class="green_code" >=</span> loginForm.elements.password.value;
+    <span class="orange_code">const</span> registeredUsers <span class="green_code" >=</span> JSON.parse(localStorage.getItem('registered')) <span class="green_code">||</span> [];
+    <span class="orange_code">const</span> validUser <span class="green_code" >=</span> registeredUsers.find(user <span class="green_code">=></span> user.email <span class="green_code" >===</span> emailLogin <span class="green_code">&&</span> 
+    user.password <span class="green_code" >===</span> passwordLogin);
+    <span class="orange_code">if</span> (<span class="green_code">!</span>validUser) {
+        return alert(<span class="blue_code">"User or Password incorrect."</span>);
+    }
+    localStorage.setItem(<span class="blue_code">"loggedIn"</span>, JSON.stringify(validUser));
+    window.location.href <span class="green_code" >=</span> <span class="blue_code">"settings.html"</span>;
+});</code></pre>
+
+<p>Implementing the login system was an enriching experience. I learned how to manage user sessions using localStorage to store and retrieve login data. Additionally, it was important to ensure that the system was secure and verified both the username and password. By using JSON.parse to read the data and JSON.stringify to store it, I was able to manage user data efficiently and make the game accessible to each player in a personalized way.</p>
+
+<p>The registration of new users is also an essential part of the authentication system. The form allows players to create an account by entering their name, email, age, gender, and password. The code that manages the registration checks if the email or username is already registered before adding the new user to the system. This is the most relevant snippet of that part:</p>
+
+<pre id="code_auth2" ><code>registrationForm.addEventListener(<span class="blue_code">"submit"</span>, (registrationFunction) <span class="green_code" >=></span> {
+    registrationFunction.preventDefault();
+    <span class="orange_code">const</span> newUser <span class="green_code" >=</span> registrationForm.elements.user.value;
+    <span class="orange_code">const</span> newEmail <span class="green_code" >=</span> registrationForm.elements.mail.value;
+    <span class="orange_code">const</span> newAgeRange <span class="green_code" >=</span> registrationForm.elements.ageRange.value;
+    <span class="orange_code">const</span> newGender <span class="green_code" >=</span> registrationForm.elements.gender.value;
+    <span class="orange_code">const</span> newPassword <span class="green_code" >=</span> registrationForm.elements.password.value;
+    <span class="orange_code">const</span> confirmNewPassword <span class="green_code" >=</span> registrationForm.elements.confirmPassword.value;
+    <span class="orange_code">const</span> registeredUsers <span class="green_code" >=</span> JSON.parse(localStorage.getItem(<span class="blue_code">"registered"</span>)) <span class="green_code">||</span> [];
+    <span class="orange_code">const</span> searchUser <span class="green_code" >=</span> registeredUsers.find(user <span class="green_code">=></span> user.name <span class="green_code" >===</span> newUser);
+    <span class="orange_code">const</span> searchEmail <span class="green_code" >=</span> registeredUsers.find(mail <span class="green_code">=></span> mail.email <span class="green_code" >===</span> newEmail);
+    
+    <span class="orange_code">if</span> (searchEmail) {
+        return alert(<span class="blue_code">"Email already used."</span>);
+    }
+    <span class="orange_code">if</span> (searchUser) {
+        return alert(<span class="blue_code">"Username already used."</span>);
+    }
+    <span class="orange_code">if</span> (newPassword <span class="green_code" >!==</span> confirmNewPassword) {
+        return alert(<span class="blue_code">"Passwords didn't match."</span>);
+    }
+    registeredUsers.push(<span class="orange_code">new</span> UserRegistration(newUser, newEmail, newAgeRange, newGender, newPassword));
+    localStorage.setItem(<span class="blue_code">'registered'</span>, JSON.stringify(registeredUsers));
+    window.location.href <span class="green_code" >=</span> <span class="blue_code">"login.html"</span>;
+});</code></pre>
+
+<p>I learned how to validate and manage registration forms, ensuring that there are no duplicate users or emails in the system. Additionally, I implemented the verification of matching passwords before proceeding to register a new user. This functionality allowed me to better understand how to handle user data securely and efficiently, using localStorage.</p>
+
+<p>The development of this memory game allowed me to learn how to manage player interaction, from handling click events to comparing cards and updating the score. Additionally, the authentication system provided an extra layer of customization and security, allowing players to have their own profile and access their statistics. Overall, this project was an excellent opportunity to enhance my skills in JavaScript, both in managing game logic and implementing features such as user registration and login.</p>
+
+</div>
 </div>    
 
 
