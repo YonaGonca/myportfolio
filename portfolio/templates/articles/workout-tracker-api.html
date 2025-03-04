@@ -25,12 +25,12 @@
     
         <p>Here is the configuration in <strong>settings.py</strong> for <strong>Simple JWT</strong>:</p>
 
-<pre id="code_auth"><code><span class="blue_code">INSTALLED_APPS</span> <span class="blue_code">=</span> [
+<pre id="code_auth"><code><span class="orange_code">INSTALLED_APPS</span> <span class="green_code">=</span> [
     'rest_framework',
     'rest_framework_simplejwt',
 ]
 
-<span class="blue_code">REST_FRAMEWORK</span> = &#123
+<span class="orange_code">REST_FRAMEWORK</span> <span class="green_code">=</span> &#123
     'DEFAULT_AUTHENTICATION_CLASSES': &#123
         'rest_framework_simplejwt.authentication.JWTAuthentication',
     &#125
@@ -40,11 +40,11 @@
 
         <p>To obtain an access token, users can make a <strong>POST</strong> request:</p>
 
-<pre id="code_request"><code><span class="green_code">curl</span> <span class="blue_code">-X POST</span> <span class="blue_code">http://localhost:8000/api/token/</span>
+<pre id="code_request"><code><span class="orange_code">curl</span> <span class="orange_code">-X POST</span> <span class="blue_code">http://localhost:8000/api/token/</span>
 
-    <span class="green_code">-H</span> <span class="blue_code">"Content-Type: application/json"</span>
+    <span class="orange_code">-H</span> <span class="blue_code">"Content-Type: application/json"</span>
         
-    <span class="green_code">-d</span> <span class="blue_code">'{ "username": "user", "password": "pass" }'</span>
+    <span class="orange_code">-d</span> <span class="blue_code">'{ "username": "user", "password": "pass" }'</span>
 </code></pre>
         
         
@@ -58,9 +58,9 @@
         <p>I used <strong>ViewSets</strong> and <strong>Serializers</strong> to simplify resource management. Here is an example of the exercise model:</p>
 
 <pre id="code_crud_model"><code><span class="green_code">class</span> <span class="orange_code">Exercise</span>(models.Model):
-    <span class="blue_code" >name</span> <span class="green_code" >=</span> models.CharField(max_length<span class="green_code" >=</span><span class="pink_code">100</span>)
-    <span class="blue_code" >description</span> <span class="green_code" >=</span> models.TextField()
-    <span class="blue_code" >muscle_group</span> <span class="green_code" >=</span> models.CharField(max_length<span class="green_code" >=</span><span class="pink_code">100</span>)
+    name <span class="green_code" >=</span> models.CharField(max_length<span class="green_code" >=</span><span class="pink_code">100</span>)
+    description <span class="green_code" >=</span> models.TextField()
+    muscle_group <span class="green_code" >=</span> models.CharField(max_length<span class="green_code" >=</span><span class="pink_code">100</span>)
     
     <span class="green_code">def</span> __str__(self):
         <span class="green_code">return</span> self.name
@@ -71,17 +71,17 @@
 
 <pre id="code_crud_serializer"><code><span class="green_code">class</span> <span class="orange_code">ExerciseSerializer</span>(serializers.ModelSerializer):
     <span class="green_code">class</span> Meta:
-        <span class="blue_code">model</span> <span class="green_code" >=</span> Exercise
-        <span class="blue_code">fields</span> <span class="green_code" >=</span> '__all__'
+        model <span class="green_code" >=</span> Exercise
+        fields <span class="green_code" >=</span> <span class="blue_code" >'__all__'</span>
 </code></pre>
     
 
         <p>And the <strong>ViewSet</strong> to handle the <strong>CRUD</strong> operations:</p>
 
 <pre id="code_crud_viewset"><code><span class="green_code">class</span> <span class="orange_code">ExerciseViewSet</span>(viewsets.ModelViewSet):
-    <span class="blue_code">queryset</span> <span class="green_code" >=</span> Exercise.objects.all()
-    <span class="blue_code">serializer_class</span> <span class="green_code" >=</span> ExerciseSerializer
-    <span class="blue_code">permission_classes</span> <span class="green_code" >=</span> [IsAuthenticated]
+    queryset <span class="green_code" >=</span> Exercise.objects.all()
+    serializer_class <span class="green_code" >=</span> ExerciseSerializer
+    permission_classes <span class="green_code" >=</span> [IsAuthenticated]
 </code></pre>
     
         
@@ -93,11 +93,11 @@
 
         <p>Configuration in <strong>settings.py:</strong></p>
     
-<pre id="code_swagger"><code><span class="blue_code">INSTALLED_APPS</span> = [
+<pre id="code_swagger"><code><span class="orange_code">INSTALLED_APPS</span> <span class="green_code" >=</span> [
     'drf_spectacular',
 ]
     
-<span class="blue_code">REST_FRAMEWORK</span> = {
+<span class="orange_code">REST_FRAMEWORK</span> <span class="green_code" >=</span> {
     'DEFAULT_SCHEMA_CLASS': 'drf_spectacular.openapi.AutoSchema',
 }
 </code></pre>
