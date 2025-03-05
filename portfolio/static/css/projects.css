@@ -23,3 +23,10 @@
     }
     
       }
+
+/*mobile devices */
+@media screen and (max-width: 1023px) {
+  #projects_header{
+      margin-top: 90px;
+  }
+}

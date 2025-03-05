@@ -334,7 +334,7 @@ nav {
 /*Projects*/
 
 #container_projects{
-  margin-top: 100px;
+  margin-top: 30px;
   margin-bottom: 100px;
 }
 
@@ -511,7 +511,7 @@ nav {
 
 #container_contactme{
   position: relative;
-  width: 100%;
+  min-width: 500px;
   padding: 7rem;
   overflow: hidden;
   display: flex;
