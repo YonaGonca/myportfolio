@@ -511,7 +511,7 @@ nav {
 
 #container_contactme{
   position: relative;
-  min-width: 500px;
+  width: 100%;
   padding: 7rem;
   overflow: hidden;
   display: flex;
@@ -726,9 +726,13 @@ textarea.input::-webkit-scrollbar {
   color: var(--first-color);
 }
 
-@media screen and (max-width: 675px) {
+@media screen and (max-width: 780px) {
   .form{
     grid-template-columns: 1fr;
+  }
+
+  #container_contactme{
+    padding: 10%;
   }
 }
 
@@ -794,6 +798,10 @@ footer a{
   .nav-logo img{
     width: 40px;
     margin: 10px;
+  }
+
+  #skills_header{
+    margin-top: -50px;
   }
 
 }

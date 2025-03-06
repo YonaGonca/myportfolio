@@ -29,7 +29,10 @@ pre{
     padding: 25px 35px;
     margin: 25px auto;
     font-weight: 600;
-}
+    overflow-x: auto;
+    -ms-overflow-style: none;  
+    scrollbar-width: none; 
+  }
 
 /*Color Code Classes*/
 
@@ -140,3 +143,14 @@ pre{
 #code_auth2{
     width: 980px;
 }
+
+@media screen and (max-width: 1023px) {
+    pre{
+        width: 100% !important;
+    }
+
+    #container_article{
+        margin-top: 90px;
+    }
+  
+  }
